@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9018BC2B211E1C9E00F4A043 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9018BC2A211E1C9E00F4A043 /* Items.swift */; };
+		9018BC2D211E258500F4A043 /* SteeleSmithViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9018BC2C211E258500F4A043 /* SteeleSmithViewController.swift */; };
+		9018BC2F211E520000F4A043 /* ItemShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9018BC2E211E520000F4A043 /* ItemShopViewController.swift */; };
+		9018BC31211E68FF00F4A043 /* SirArmourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9018BC30211E68FF00F4A043 /* SirArmourViewController.swift */; };
+		9018BC33211E6EDA00F4A043 /* MissJewelryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9018BC32211E6EDA00F4A043 /* MissJewelryViewController.swift */; };
+		902579CF21237C5500EB3240 /* RestartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902579CE21237C5500EB3240 /* RestartViewController.swift */; };
+		902579D32123840800EB3240 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902579D22123840800EB3240 /* StartViewController.swift */; };
+		902579F72124FDD900EB3240 /* NavigatorModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 902579F52124FDD800EB3240 /* NavigatorModel.xcdatamodeld */; };
+		90308035211F70D8001A351A /* MrBankizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90308034211F70D8001A351A /* MrBankizViewController.swift */; };
+		90308037211F726D001A351A /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90308036211F726D001A351A /* Bank.swift */; };
+		903080392120FBE5001A351A /* MasterNotoriousViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903080382120FBE5001A351A /* MasterNotoriousViewController.swift */; };
+		905E825B2115F0B800846DC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905E825A2115F0B800846DC5 /* AppDelegate.swift */; };
+		905E825D2115F0B800846DC5 /* CrossroadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905E825C2115F0B800846DC5 /* CrossroadViewController.swift */; };
+		905E82602115F0B800846DC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 905E825E2115F0B800846DC5 /* Main.storyboard */; };
+		905E82622115F0BA00846DC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 905E82612115F0BA00846DC5 /* Assets.xcassets */; };
+		905E82652115F0BA00846DC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 905E82632115F0BA00846DC5 /* LaunchScreen.storyboard */; };
+		905E82712117A1C300846DC5 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905E82702117A1C300846DC5 /* Player.swift */; };
+		905E8273211891C400846DC5 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905E8272211891C400846DC5 /* Monster.swift */; };
+		905E827521189F2000846DC5 /* CombatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905E827421189F2000846DC5 /* CombatViewController.swift */; };
+		905E827721189FBD00846DC5 /* ForestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905E827621189FBD00846DC5 /* ForestViewController.swift */; };
+		905E82792118F38E00846DC5 /* Combat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905E82782118F38E00846DC5 /* Combat.swift */; };
+		905E827B21190AD300846DC5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905E827A21190AD300846DC5 /* Extensions.swift */; };
+		905E827F211A7E3200846DC5 /* RagHealHutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905E827E211A7E3200846DC5 /* RagHealHutViewController.swift */; };
+		905E8281211BAEFB00846DC5 /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905E8280211BAEFB00846DC5 /* Dice.swift */; };
+		905E8283211BBA9000846DC5 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905E8282211BBA9000846DC5 /* Helpers.swift */; };
+		905E8285211BC05600846DC5 /* PlayerContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905E8284211BC05600846DC5 /* PlayerContainerViewController.swift */; };
+		905E8287211CF0CB00846DC5 /* PriestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905E8286211CF0CB00846DC5 /* PriestViewController.swift */; };
+		905E8289211CF29300846DC5 /* VillageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905E8288211CF29300846DC5 /* VillageViewController.swift */; };
+		905E828B211CFDCA00846DC5 /* Slip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905E828A211CFDCA00846DC5 /* Slip.swift */; };
+		905E828D211D1A2F00846DC5 /* HouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905E828C211D1A2F00846DC5 /* HouseViewController.swift */; };
+		909DB30621224B630033CCF7 /* UnderworldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909DB30521224B630033CCF7 /* UnderworldViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9018BC2A211E1C9E00F4A043 /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		9018BC2C211E258500F4A043 /* SteeleSmithViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteeleSmithViewController.swift; sourceTree = "<group>"; };
+		9018BC2E211E520000F4A043 /* ItemShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemShopViewController.swift; sourceTree = "<group>"; };
+		9018BC30211E68FF00F4A043 /* SirArmourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SirArmourViewController.swift; sourceTree = "<group>"; };
+		9018BC32211E6EDA00F4A043 /* MissJewelryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissJewelryViewController.swift; sourceTree = "<group>"; };
+		902579CE21237C5500EB3240 /* RestartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestartViewController.swift; sourceTree = "<group>"; };
+		902579D22123840800EB3240 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		902579F62124FDD800EB3240 /* NavigatorModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NavigatorModel.xcdatamodel; sourceTree = "<group>"; };
+		90308034211F70D8001A351A /* MrBankizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrBankizViewController.swift; sourceTree = "<group>"; };
+		90308036211F726D001A351A /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
+		903080382120FBE5001A351A /* MasterNotoriousViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterNotoriousViewController.swift; sourceTree = "<group>"; };
+		905E82572115F0B800846DC5 /* MasterNotorious.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasterNotorious.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		905E825A2115F0B800846DC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		905E825C2115F0B800846DC5 /* CrossroadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossroadViewController.swift; sourceTree = "<group>"; };
+		905E825F2115F0B800846DC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		905E82612115F0BA00846DC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		905E82642115F0BA00846DC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		905E82662115F0BA00846DC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		905E82702117A1C300846DC5 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		905E8272211891C400846DC5 /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
+		905E827421189F2000846DC5 /* CombatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombatViewController.swift; sourceTree = "<group>"; };
+		905E827621189FBD00846DC5 /* ForestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForestViewController.swift; sourceTree = "<group>"; };
+		905E82782118F38E00846DC5 /* Combat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combat.swift; sourceTree = "<group>"; };
+		905E827A21190AD300846DC5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		905E827E211A7E3200846DC5 /* RagHealHutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RagHealHutViewController.swift; sourceTree = "<group>"; };
+		905E8280211BAEFB00846DC5 /* Dice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice.swift; sourceTree = "<group>"; };
+		905E8282211BBA9000846DC5 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		905E8284211BC05600846DC5 /* PlayerContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerContainerViewController.swift; sourceTree = "<group>"; };
+		905E8286211CF0CB00846DC5 /* PriestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriestViewController.swift; sourceTree = "<group>"; };
+		905E8288211CF29300846DC5 /* VillageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillageViewController.swift; sourceTree = "<group>"; };
+		905E828A211CFDCA00846DC5 /* Slip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slip.swift; sourceTree = "<group>"; };
+		905E828C211D1A2F00846DC5 /* HouseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseViewController.swift; sourceTree = "<group>"; };
+		909DB30521224B630033CCF7 /* UnderworldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderworldViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		905E82542115F0B800846DC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		905E824E2115F0B800846DC5 = {
+			isa = PBXGroup;
+			children = (
+				905E82592115F0B800846DC5 /* MasterNotorious */,
+				905E82582115F0B800846DC5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		905E82582115F0B800846DC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				905E82572115F0B800846DC5 /* MasterNotorious.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		905E82592115F0B800846DC5 /* MasterNotorious */ = {
+			isa = PBXGroup;
+			children = (
+				905E825A2115F0B800846DC5 /* AppDelegate.swift */,
+				902579F52124FDD800EB3240 /* NavigatorModel.xcdatamodeld */,
+				902579D22123840800EB3240 /* StartViewController.swift */,
+				905E825E2115F0B800846DC5 /* Main.storyboard */,
+				905E825C2115F0B800846DC5 /* CrossroadViewController.swift */,
+				909DB30521224B630033CCF7 /* UnderworldViewController.swift */,
+				905E827621189FBD00846DC5 /* ForestViewController.swift */,
+				905E827421189F2000846DC5 /* CombatViewController.swift */,
+				905E827E211A7E3200846DC5 /* RagHealHutViewController.swift */,
+				905E8284211BC05600846DC5 /* PlayerContainerViewController.swift */,
+				905E8288211CF29300846DC5 /* VillageViewController.swift */,
+				905E8286211CF0CB00846DC5 /* PriestViewController.swift */,
+				90308034211F70D8001A351A /* MrBankizViewController.swift */,
+				903080382120FBE5001A351A /* MasterNotoriousViewController.swift */,
+				9018BC2E211E520000F4A043 /* ItemShopViewController.swift */,
+				9018BC2C211E258500F4A043 /* SteeleSmithViewController.swift */,
+				9018BC30211E68FF00F4A043 /* SirArmourViewController.swift */,
+				9018BC32211E6EDA00F4A043 /* MissJewelryViewController.swift */,
+				905E828C211D1A2F00846DC5 /* HouseViewController.swift */,
+				902579CE21237C5500EB3240 /* RestartViewController.swift */,
+				905E82612115F0BA00846DC5 /* Assets.xcassets */,
+				905E82632115F0BA00846DC5 /* LaunchScreen.storyboard */,
+				905E82662115F0BA00846DC5 /* Info.plist */,
+				905E82702117A1C300846DC5 /* Player.swift */,
+				90308036211F726D001A351A /* Bank.swift */,
+				9018BC2A211E1C9E00F4A043 /* Items.swift */,
+				905E8272211891C400846DC5 /* Monster.swift */,
+				905E82782118F38E00846DC5 /* Combat.swift */,
+				905E827A21190AD300846DC5 /* Extensions.swift */,
+				905E8280211BAEFB00846DC5 /* Dice.swift */,
+				905E8282211BBA9000846DC5 /* Helpers.swift */,
+				905E828A211CFDCA00846DC5 /* Slip.swift */,
+			);
+			path = MasterNotorious;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		905E82562115F0B800846DC5 /* MasterNotorious */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 905E82692115F0BA00846DC5 /* Build configuration list for PBXNativeTarget "MasterNotorious" */;
+			buildPhases = (
+				905E82532115F0B800846DC5 /* Sources */,
+				905E82542115F0B800846DC5 /* Frameworks */,
+				905E82552115F0B800846DC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MasterNotorious;
+			productName = NavigatorTest;
+			productReference = 905E82572115F0B800846DC5 /* MasterNotorious.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		905E824F2115F0B800846DC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Tiago Leichsenring";
+				TargetAttributes = {
+					905E82562115F0B800846DC5 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 905E82522115F0B800846DC5 /* Build configuration list for PBXProject "MasterNotorious" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 905E824E2115F0B800846DC5;
+			productRefGroup = 905E82582115F0B800846DC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				905E82562115F0B800846DC5 /* MasterNotorious */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		905E82552115F0B800846DC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				905E82652115F0BA00846DC5 /* LaunchScreen.storyboard in Resources */,
+				905E82622115F0BA00846DC5 /* Assets.xcassets in Resources */,
+				905E82602115F0B800846DC5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		905E82532115F0B800846DC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9018BC2B211E1C9E00F4A043 /* Items.swift in Sources */,
+				905E8273211891C400846DC5 /* Monster.swift in Sources */,
+				905E825D2115F0B800846DC5 /* CrossroadViewController.swift in Sources */,
+				905E82712117A1C300846DC5 /* Player.swift in Sources */,
+				909DB30621224B630033CCF7 /* UnderworldViewController.swift in Sources */,
+				902579D32123840800EB3240 /* StartViewController.swift in Sources */,
+				905E8289211CF29300846DC5 /* VillageViewController.swift in Sources */,
+				905E827B21190AD300846DC5 /* Extensions.swift in Sources */,
+				905E827721189FBD00846DC5 /* ForestViewController.swift in Sources */,
+				90308037211F726D001A351A /* Bank.swift in Sources */,
+				905E8287211CF0CB00846DC5 /* PriestViewController.swift in Sources */,
+				90308035211F70D8001A351A /* MrBankizViewController.swift in Sources */,
+				9018BC2D211E258500F4A043 /* SteeleSmithViewController.swift in Sources */,
+				905E828D211D1A2F00846DC5 /* HouseViewController.swift in Sources */,
+				9018BC33211E6EDA00F4A043 /* MissJewelryViewController.swift in Sources */,
+				902579F72124FDD900EB3240 /* NavigatorModel.xcdatamodeld in Sources */,
+				905E827F211A7E3200846DC5 /* RagHealHutViewController.swift in Sources */,
+				9018BC2F211E520000F4A043 /* ItemShopViewController.swift in Sources */,
+				905E8281211BAEFB00846DC5 /* Dice.swift in Sources */,
+				905E8283211BBA9000846DC5 /* Helpers.swift in Sources */,
+				902579CF21237C5500EB3240 /* RestartViewController.swift in Sources */,
+				905E827521189F2000846DC5 /* CombatViewController.swift in Sources */,
+				9018BC31211E68FF00F4A043 /* SirArmourViewController.swift in Sources */,
+				903080392120FBE5001A351A /* MasterNotoriousViewController.swift in Sources */,
+				905E8285211BC05600846DC5 /* PlayerContainerViewController.swift in Sources */,
+				905E825B2115F0B800846DC5 /* AppDelegate.swift in Sources */,
+				905E828B211CFDCA00846DC5 /* Slip.swift in Sources */,
+				905E82792118F38E00846DC5 /* Combat.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		905E825E2115F0B800846DC5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				905E825F2115F0B800846DC5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		905E82632115F0BA00846DC5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				905E82642115F0BA00846DC5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		905E82672115F0BA00846DC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		905E82682115F0BA00846DC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		905E826A2115F0BA00846DC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 325JNH32TP;
+				INFOPLIST_FILE = NavigatorTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mateus.leichsen.MasterNotorious;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		905E826B2115F0BA00846DC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 325JNH32TP;
+				INFOPLIST_FILE = NavigatorTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mateus.leichsen.MasterNotorious;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		905E82522115F0B800846DC5 /* Build configuration list for PBXProject "MasterNotorious" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				905E82672115F0BA00846DC5 /* Debug */,
+				905E82682115F0BA00846DC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		905E82692115F0BA00846DC5 /* Build configuration list for PBXNativeTarget "MasterNotorious" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				905E826A2115F0BA00846DC5 /* Debug */,
+				905E826B2115F0BA00846DC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		902579F52124FDD800EB3240 /* NavigatorModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				902579F62124FDD800EB3240 /* NavigatorModel.xcdatamodel */,
+			);
+			currentVersion = 902579F62124FDD800EB3240 /* NavigatorModel.xcdatamodel */;
+			path = NavigatorModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 905E824F2115F0B800846DC5 /* Project object */;
+}

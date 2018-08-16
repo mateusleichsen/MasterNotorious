@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "closure #1 in PriestViewController.getAdvise():PriestViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "data">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PlayerContainerViewController.updateStatus():PlayerContainerViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "player">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CombatViewController.setPlayerStatus():CombatViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "RagHealHutViewController.setInitialValues():RagHealHutViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ItemShopViewController.fillPicker&lt;A&gt;(items:):ItemShopViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.items">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Slip.init(_:):Slip.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "value">
+            </PersistentString>
+            <PersistentString
+               value = "advice">
+            </PersistentString>
+            <PersistentString
+               value = "value[&quot;slip&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Monster.init(_:level:mode:):Monster.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "health">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CombatViewController.setEndGame(monsterDead:):CombatViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "Player.weapon.didset:Player.swift">
+      </ContextState>
+      <ContextState
+         contextName = "Player.jewelry.willset:Player.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "attack">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in requestAPI(urlSource:):Helpers.swift">
+      </ContextState>
+      <ContextState
+         contextName = "Player.changeRace(_:):Player.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "skill">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Bank.deposit(value:):Bank.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "deposits">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "StartViewController.startTapped(_:):StartViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "raceProfessionPickerView.selectedRow(inComponent: 0)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
