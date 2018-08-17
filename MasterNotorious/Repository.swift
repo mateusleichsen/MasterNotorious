@@ -2,8 +2,8 @@
 //  Repository.swift
 //  MasterNotorious
 //
-//  Created by Tiago Leichsenring on 17.08.18.
-//  Copyright © 2018 Tiago Leichsenring. All rights reserved.
+//  Created by Mateus Leichsenring on 17.08.18.
+//  Copyright © 2018 Mateus Leichsenring. All rights reserved.
 //
 
 import Foundation
