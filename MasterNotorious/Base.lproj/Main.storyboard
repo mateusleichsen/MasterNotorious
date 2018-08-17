@@ -14,7 +14,7 @@
         <!--Main-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="mainViewStoryID" title="Main" id="BYZ-38-t0r" customClass="CrossroadViewController" customModule="NavigatorTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainViewStoryID" title="Main" id="BYZ-38-t0r" customClass="CrossroadViewController" customModule="MasterNotorious" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,39 +25,6 @@
                                     <constraint firstAttribute="height" constant="128" id="07A-5N-hpt"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Wyn-1h-2O7">
-                                <rect key="frame" x="0.0" y="156" width="375" height="135"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ykr-jj-eIg">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                        <state key="normal" title="Florest"/>
-                                        <connections>
-                                            <segue destination="Hp2-Ny-6uh" kind="show" identifier="segueFlorest" id="QXa-x5-l6X"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myr-OC-D1T">
-                                        <rect key="frame" x="0.0" y="45" width="375" height="45"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                        <state key="normal" title="Village"/>
-                                        <connections>
-                                            <segue destination="e6R-br-Iki" kind="show" identifier="segueVillage" id="PeC-2Z-Qbv"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cm-q4-Yiu">
-                                        <rect key="frame" x="0.0" y="90" width="375" height="45"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                        <state key="normal" title="House"/>
-                                        <connections>
-                                            <segue destination="B8U-oc-JtZ" kind="show" identifier="segueHouse" id="Hh4-6B-0VN"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="135" id="b0Z-Ut-Xb4"/>
-                                </constraints>
-                            </stackView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c1w-FM-aen">
                                 <rect key="frame" x="16" y="517" width="343" height="130"/>
                                 <constraints>
@@ -68,23 +35,57 @@
                                     <segue destination="l5d-5l-J41" kind="embed" id="dYp-ef-e5V"/>
                                 </connections>
                             </containerView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="2b5-KT-iVN">
+                                <rect key="frame" x="16" y="156" width="343" height="145"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ykr-jj-eIg">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="Florest"/>
+                                        <connections>
+                                            <segue destination="Hp2-Ny-6uh" kind="show" identifier="segueFlorest" id="QXa-x5-l6X"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myr-OC-D1T">
+                                        <rect key="frame" x="0.0" y="50" width="343" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="Village"/>
+                                        <connections>
+                                            <segue destination="e6R-br-Iki" kind="show" identifier="segueVillage" id="PeC-2Z-Qbv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cm-q4-Yiu">
+                                        <rect key="frame" x="0.0" y="100" width="343" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="House"/>
+                                        <connections>
+                                            <segue destination="B8U-oc-JtZ" kind="show" identifier="segueHouse" id="Hh4-6B-0VN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Wyn-1h-2O7" firstAttribute="top" secondItem="uDH-52-wTr" secondAttribute="bottom" constant="8" symbolic="YES" id="EaG-Rm-z9S"/>
-                            <constraint firstItem="Wyn-1h-2O7" firstAttribute="leading" secondItem="uDH-52-wTr" secondAttribute="leading" id="H0S-lE-sMC"/>
                             <constraint firstItem="c1w-FM-aen" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="LYl-bt-omB"/>
-                            <constraint firstItem="Wyn-1h-2O7" firstAttribute="top" secondItem="uDH-52-wTr" secondAttribute="bottom" constant="8" id="QWi-8P-FbE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wyn-1h-2O7" secondAttribute="trailing" id="U3H-2q-Fs6"/>
+                            <constraint firstItem="2b5-KT-iVN" firstAttribute="top" secondItem="uDH-52-wTr" secondAttribute="bottom" constant="8" id="POR-pl-nZ2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="c1w-FM-aen" secondAttribute="bottom" constant="20" id="UfH-ne-Zkh"/>
-                            <constraint firstItem="Wyn-1h-2O7" firstAttribute="trailing" secondItem="uDH-52-wTr" secondAttribute="trailing" id="k5t-NS-DNg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2b5-KT-iVN" secondAttribute="trailing" constant="16" id="Y7k-3P-s2f"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c1w-FM-aen" secondAttribute="trailing" constant="16" id="kcX-lK-uU2"/>
+                            <constraint firstItem="uDH-52-wTr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mh2-Gr-hIV"/>
                             <constraint firstItem="uDH-52-wTr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="s8d-j8-8aK"/>
-                            <constraint firstItem="Wyn-1h-2O7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wUh-DE-xag"/>
+                            <constraint firstItem="uDH-52-wTr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wAx-d2-PZN"/>
+                            <constraint firstItem="2b5-KT-iVN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="y7s-Re-0mc"/>
+                            <constraint firstItem="uDH-52-wTr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zlY-7u-4Ns"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Crossroad" id="9BW-mM-SRF"/>
+                    <connections>
+                        <outlet property="florestButton" destination="Ykr-jj-eIg" id="jco-dM-0le"/>
+                        <outlet property="houseButton" destination="3cm-q4-Yiu" id="Js4-Nf-yhG"/>
+                        <outlet property="villageButton" destination="myr-OC-D1T" id="bRj-nk-Ixj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -93,7 +94,7 @@
         <!--Village-->
         <scene sceneID="fZ6-NV-5cZ">
             <objects>
-                <viewController title="Village" id="e6R-br-Iki" customClass="VillageViewController" customModule="NavigatorTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Village" id="e6R-br-Iki" customClass="VillageViewController" customModule="MasterNotorious" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lgx-L1-RB6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -105,64 +106,6 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="oxG-by-UaK"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="yds-qt-Yza">
-                                <rect key="frame" x="0.0" y="149" width="375" height="270"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ipq-12-VWB">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                        <state key="normal" title="Steele Smith"/>
-                                        <connections>
-                                            <segue destination="Sve-ya-bsm" kind="show" id="3vv-gh-98T"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wUM-m5-rxj">
-                                        <rect key="frame" x="0.0" y="45" width="375" height="45"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                        <state key="normal" title="Sir Armour"/>
-                                        <connections>
-                                            <segue destination="TbU-BM-fg6" kind="show" id="fT4-Jv-d5d"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPa-AG-pzb">
-                                        <rect key="frame" x="0.0" y="90" width="375" height="45"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                        <state key="normal" title="Miss Jewely"/>
-                                        <connections>
-                                            <segue destination="7xL-MI-iG8" kind="show" id="UcY-YH-gkv"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdN-CT-fLo">
-                                        <rect key="frame" x="0.0" y="135" width="375" height="45"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                        <state key="normal" title="Mr. Bankiz"/>
-                                        <connections>
-                                            <segue destination="STb-gO-DBi" kind="show" id="2Ab-oD-Vpu"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGP-kH-lx3">
-                                        <rect key="frame" x="0.0" y="180" width="375" height="45"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                        <state key="normal" title="Priest"/>
-                                        <connections>
-                                            <segue destination="Lgl-Hc-CsC" kind="show" id="TPo-4t-7Rj"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhu-hR-A4O">
-                                        <rect key="frame" x="0.0" y="225" width="375" height="45"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                        <state key="normal" title="Master Notorious"/>
-                                        <connections>
-                                            <segue destination="89F-vw-Z20" kind="show" id="ic1-Ab-Vzz"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="270" id="5QD-pr-cKF"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="270" id="z00-BI-AHG"/>
-                                </constraints>
-                            </stackView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yfw-L5-hci">
                                 <rect key="frame" x="16" y="517" width="343" height="130"/>
                                 <constraints>
@@ -174,22 +117,82 @@
                                     <segue destination="l5d-5l-J41" kind="embed" id="iL9-Wc-rPo"/>
                                 </connections>
                             </containerView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="QMI-ID-8kf">
+                                <rect key="frame" x="16" y="156" width="343" height="295"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ipq-12-VWB">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="Steele Smith"/>
+                                        <connections>
+                                            <segue destination="Sve-ya-bsm" kind="show" id="3vv-gh-98T"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wUM-m5-rxj">
+                                        <rect key="frame" x="0.0" y="50" width="343" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="Sir Armour"/>
+                                        <connections>
+                                            <segue destination="TbU-BM-fg6" kind="show" id="fT4-Jv-d5d"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPa-AG-pzb">
+                                        <rect key="frame" x="0.0" y="100" width="343" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="Miss Jewely"/>
+                                        <connections>
+                                            <segue destination="7xL-MI-iG8" kind="show" id="UcY-YH-gkv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdN-CT-fLo">
+                                        <rect key="frame" x="0.0" y="150" width="343" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="Mr. Bankiz"/>
+                                        <connections>
+                                            <segue destination="STb-gO-DBi" kind="show" id="2Ab-oD-Vpu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGP-kH-lx3">
+                                        <rect key="frame" x="0.0" y="200" width="343" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="Priest"/>
+                                        <connections>
+                                            <segue destination="Lgl-Hc-CsC" kind="show" id="TPo-4t-7Rj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhu-hR-A4O">
+                                        <rect key="frame" x="0.0" y="250" width="343" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="Master Notorious"/>
+                                        <connections>
+                                            <segue destination="89F-vw-Z20" kind="show" id="ic1-Ab-Vzz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="yds-qt-Yza" firstAttribute="top" secondItem="i9j-JL-rnT" secondAttribute="bottom" constant="1" id="1WB-ch-1LY"/>
                             <constraint firstItem="Yfw-L5-hci" firstAttribute="leading" secondItem="YDs-6i-Mgf" secondAttribute="leading" constant="16" id="Ame-rP-QhJ"/>
                             <constraint firstItem="i9j-JL-rnT" firstAttribute="top" secondItem="YDs-6i-Mgf" secondAttribute="top" id="HaV-AP-os6"/>
-                            <constraint firstItem="YDs-6i-Mgf" firstAttribute="trailing" secondItem="yds-qt-Yza" secondAttribute="trailing" id="VVZ-jg-RjW"/>
+                            <constraint firstItem="QMI-ID-8kf" firstAttribute="leading" secondItem="YDs-6i-Mgf" secondAttribute="leading" constant="16" id="RCr-2X-B9i"/>
                             <constraint firstItem="i9j-JL-rnT" firstAttribute="trailing" secondItem="YDs-6i-Mgf" secondAttribute="trailing" id="bTz-VE-YCD"/>
                             <constraint firstItem="YDs-6i-Mgf" firstAttribute="bottom" secondItem="Yfw-L5-hci" secondAttribute="bottom" constant="20" id="dYY-v9-3Xl"/>
+                            <constraint firstItem="YDs-6i-Mgf" firstAttribute="trailing" secondItem="QMI-ID-8kf" secondAttribute="trailing" constant="16" id="e53-kG-oIS"/>
                             <constraint firstAttribute="trailing" secondItem="Yfw-L5-hci" secondAttribute="trailing" constant="16" id="l3T-yO-52k"/>
                             <constraint firstItem="i9j-JL-rnT" firstAttribute="leading" secondItem="YDs-6i-Mgf" secondAttribute="leading" id="nGa-cd-Odj"/>
-                            <constraint firstItem="yds-qt-Yza" firstAttribute="trailing" secondItem="YDs-6i-Mgf" secondAttribute="trailing" id="pOG-lh-6vT"/>
-                            <constraint firstItem="yds-qt-Yza" firstAttribute="leading" secondItem="YDs-6i-Mgf" secondAttribute="leading" id="xaK-MX-N46"/>
+                            <constraint firstItem="QMI-ID-8kf" firstAttribute="top" secondItem="i9j-JL-rnT" secondAttribute="bottom" constant="8" id="vwR-Ol-k2k"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YDs-6i-Mgf"/>
                     </view>
+                    <connections>
+                        <outlet property="armourButton" destination="wUM-m5-rxj" id="FbE-Vb-etT"/>
+                        <outlet property="bankizButton" destination="bdN-CT-fLo" id="cB7-o5-yJe"/>
+                        <outlet property="jewelyButton" destination="JPa-AG-pzb" id="A3t-Hi-gf9"/>
+                        <outlet property="notoriousButton" destination="lhu-hR-A4O" id="suz-1Z-KuH"/>
+                        <outlet property="priestButton" destination="UGP-kH-lx3" id="qWu-fr-BkG"/>
+                        <outlet property="smithButton" destination="Ipq-12-VWB" id="hYO-Qu-zpQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O1P-dM-Tuk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -198,7 +201,7 @@
         <!--Master Notorious-->
         <scene sceneID="C9a-f8-oMi">
             <objects>
-                <viewController title="Master Notorious" id="89F-vw-Z20" customClass="MasterNotoriousViewController" customModule="NavigatorTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Master Notorious" id="89F-vw-Z20" customClass="MasterNotoriousViewController" customModule="MasterNotorious" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6OB-3V-riL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -260,7 +263,7 @@
         <!--Restart View Controller-->
         <scene sceneID="DyI-we-oqo">
             <objects>
-                <viewController id="52B-sL-cws" customClass="RestartViewController" customModule="NavigatorTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="52B-sL-cws" customClass="RestartViewController" customModule="MasterNotorious" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="luK-Xt-5nh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -331,7 +334,7 @@
         <!--Mr. Bankiz-->
         <scene sceneID="zI6-or-Bfk">
             <objects>
-                <viewController title="Mr. Bankiz" id="STb-gO-DBi" customClass="MrBankizViewController" customModule="NavigatorTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Mr. Bankiz" id="STb-gO-DBi" customClass="MrBankizViewController" customModule="MasterNotorious" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JwT-WT-pna">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -521,7 +524,7 @@
         <!--Steele Smith-->
         <scene sceneID="Dv5-sc-ibC">
             <objects>
-                <viewController title="Steele Smith" id="Sve-ya-bsm" customClass="SteeleSmithViewController" customModule="NavigatorTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Steele Smith" id="Sve-ya-bsm" customClass="SteeleSmithViewController" customModule="MasterNotorious" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h2b-D4-bcV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -561,7 +564,7 @@
         <!--Sir Armour-->
         <scene sceneID="eWJ-sA-5z6">
             <objects>
-                <viewController title="Sir Armour" id="TbU-BM-fg6" customClass="SirArmourViewController" customModule="NavigatorTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Sir Armour" id="TbU-BM-fg6" customClass="SirArmourViewController" customModule="MasterNotorious" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U8l-Ga-MPT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -601,7 +604,7 @@
         <!--Miss Jewely-->
         <scene sceneID="aYQ-II-SzV">
             <objects>
-                <viewController title="Miss Jewely" id="7xL-MI-iG8" customClass="MissJewelryViewController" customModule="NavigatorTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Miss Jewely" id="7xL-MI-iG8" customClass="MissJewelryViewController" customModule="MasterNotorious" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WTj-JF-j2J">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -641,7 +644,7 @@
         <!--Priest-->
         <scene sceneID="IrO-wt-wnZ">
             <objects>
-                <viewController title="Priest" id="Lgl-Hc-CsC" customClass="PriestViewController" customModule="NavigatorTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Priest" id="Lgl-Hc-CsC" customClass="PriestViewController" customModule="MasterNotorious" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gh8-bf-bgL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -725,7 +728,7 @@
         <!--House-->
         <scene sceneID="fH2-H7-4vJ">
             <objects>
-                <viewController title="House" id="B8U-oc-JtZ" customClass="HouseViewController" customModule="NavigatorTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="House" id="B8U-oc-JtZ" customClass="HouseViewController" customModule="MasterNotorious" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PRp-px-9Zi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -801,7 +804,7 @@
         <!--Underworld View Controller-->
         <scene sceneID="3bh-n3-hcm">
             <objects>
-                <viewController storyboardIdentifier="UnderworldViewController" id="e4i-vo-JBH" customClass="UnderworldViewController" customModule="NavigatorTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UnderworldViewController" id="e4i-vo-JBH" customClass="UnderworldViewController" customModule="MasterNotorious" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4MY-0l-Pav">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -875,7 +878,7 @@
         <!--Hunt-->
         <scene sceneID="r4a-cv-qBy">
             <objects>
-                <viewController title="Hunt" id="Et6-nk-nLD" customClass="CombatViewController" customModule="NavigatorTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Hunt" id="Et6-nk-nLD" customClass="CombatViewController" customModule="MasterNotorious" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mxA-gr-ZRf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1114,7 +1117,7 @@
         <!--Rag Heal Hut-->
         <scene sceneID="k7A-w2-TpR">
             <objects>
-                <viewController title="Rag Heal Hut" id="6wM-qK-gvf" customClass="RagHealHutViewController" customModule="NavigatorTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Rag Heal Hut" id="6wM-qK-gvf" customClass="RagHealHutViewController" customModule="MasterNotorious" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2em-FQ-zLn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1246,7 +1249,7 @@
         <!--Florest-->
         <scene sceneID="TCD-iK-1sO">
             <objects>
-                <viewController title="Florest" id="Hp2-Ny-6uh" customClass="ForestViewController" customModule="NavigatorTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Florest" id="Hp2-Ny-6uh" customClass="ForestViewController" customModule="MasterNotorious" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ypL-ye-IAd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1258,47 +1261,6 @@
                                     <constraint firstAttribute="height" constant="128" id="rpI-RX-lfg"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6a8-eD-tbB">
-                                <rect key="frame" x="0.0" y="156" width="375" height="180"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vuo-b0-oHM">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                        <state key="normal" title="Hunt"/>
-                                        <connections>
-                                            <segue destination="Et6-nk-nLD" kind="show" identifier="segueHunt" id="wWQ-ZA-K15"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zlq-He-mjy">
-                                        <rect key="frame" x="0.0" y="45" width="375" height="45"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                        <state key="normal" title="Ambush"/>
-                                        <connections>
-                                            <segue destination="Et6-nk-nLD" kind="show" identifier="segueAmbush" id="vEy-ic-20p"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7D-Yd-dji">
-                                        <rect key="frame" x="0.0" y="90" width="375" height="45"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                        <state key="normal" title="Attack Bandit Camp"/>
-                                        <connections>
-                                            <segue destination="Et6-nk-nLD" kind="show" identifier="segueBanditCamp" id="fRD-gM-54g"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfv-Hk-NKI">
-                                        <rect key="frame" x="0.0" y="135" width="375" height="45"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                        <state key="normal" title="Rag Heal Hut"/>
-                                        <connections>
-                                            <segue destination="6wM-qK-gvf" kind="show" identifier="segueRagHut" id="P5E-Nd-39R"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="d4N-qc-jWO"/>
-                                </constraints>
-                            </stackView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rwM-so-FuV">
                                 <rect key="frame" x="16" y="517" width="343" height="130"/>
                                 <constraints>
@@ -1308,23 +1270,64 @@
                                     <segue destination="l5d-5l-J41" kind="embed" id="iLa-kd-wf3"/>
                                 </connections>
                             </containerView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="BIh-hS-8mm">
+                                <rect key="frame" x="16" y="156" width="343" height="195"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vuo-b0-oHM">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="Hunt"/>
+                                        <connections>
+                                            <segue destination="Et6-nk-nLD" kind="show" identifier="segueHunt" id="wWQ-ZA-K15"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zlq-He-mjy">
+                                        <rect key="frame" x="0.0" y="50" width="343" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="Ambush"/>
+                                        <connections>
+                                            <segue destination="Et6-nk-nLD" kind="show" identifier="segueAmbush" id="vEy-ic-20p"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7D-Yd-dji">
+                                        <rect key="frame" x="0.0" y="100" width="343" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="Attack Bandit Camp"/>
+                                        <connections>
+                                            <segue destination="Et6-nk-nLD" kind="show" identifier="segueBanditCamp" id="fRD-gM-54g"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfv-Hk-NKI">
+                                        <rect key="frame" x="0.0" y="150" width="343" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="Rag Heal Hut"/>
+                                        <connections>
+                                            <segue destination="6wM-qK-gvf" kind="show" identifier="segueRagHut" id="P5E-Nd-39R"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6a8-eD-tbB" firstAttribute="leading" secondItem="jJO-Sv-Lev" secondAttribute="leading" id="3Yb-jE-RLl"/>
                             <constraint firstItem="MiI-Wh-EZp" firstAttribute="leading" secondItem="jJO-Sv-Lev" secondAttribute="leading" id="4jQ-iJ-vON"/>
-                            <constraint firstItem="jJO-Sv-Lev" firstAttribute="trailing" secondItem="6a8-eD-tbB" secondAttribute="trailing" id="9rl-IT-sF6"/>
+                            <constraint firstItem="BIh-hS-8mm" firstAttribute="top" secondItem="MiI-Wh-EZp" secondAttribute="bottom" constant="8" id="ABC-Ye-YEG"/>
                             <constraint firstItem="jJO-Sv-Lev" firstAttribute="bottom" secondItem="rwM-so-FuV" secondAttribute="bottom" constant="20" id="KpU-TM-4A2"/>
                             <constraint firstItem="MiI-Wh-EZp" firstAttribute="top" secondItem="jJO-Sv-Lev" secondAttribute="top" id="NUA-mQ-8S2"/>
                             <constraint firstItem="rwM-so-FuV" firstAttribute="leading" secondItem="jJO-Sv-Lev" secondAttribute="leading" constant="16" id="e6q-ph-q7i"/>
-                            <constraint firstItem="6a8-eD-tbB" firstAttribute="top" secondItem="MiI-Wh-EZp" secondAttribute="bottom" constant="8" symbolic="YES" id="ilG-t7-LF1"/>
+                            <constraint firstItem="BIh-hS-8mm" firstAttribute="leading" secondItem="jJO-Sv-Lev" secondAttribute="leading" constant="16" id="kRV-zC-msu"/>
                             <constraint firstItem="MiI-Wh-EZp" firstAttribute="trailing" secondItem="jJO-Sv-Lev" secondAttribute="trailing" id="uW2-Ut-9xr"/>
+                            <constraint firstItem="jJO-Sv-Lev" firstAttribute="trailing" secondItem="BIh-hS-8mm" secondAttribute="trailing" constant="16" id="xjX-Zu-ezz"/>
                             <constraint firstItem="jJO-Sv-Lev" firstAttribute="trailing" secondItem="rwM-so-FuV" secondAttribute="trailing" constant="16" id="z57-kn-hvv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jJO-Sv-Lev"/>
                     </view>
                     <connections>
+                        <outlet property="ambushButton" destination="zlq-He-mjy" id="SPI-2P-Xym"/>
+                        <outlet property="banditCampButton" destination="c7D-Yd-dji" id="5Bh-sK-mZt"/>
+                        <outlet property="huntButton" destination="Vuo-b0-oHM" id="dYt-oy-T07"/>
                         <outlet property="playerContainerView" destination="rwM-so-FuV" id="l6A-pL-uQU"/>
+                        <outlet property="ragHutButton" destination="dfv-Hk-NKI" id="WJJ-pR-Od9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dpu-XL-U6w" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1334,13 +1337,13 @@
         <!--Start View Controller-->
         <scene sceneID="I6o-6J-Ny7">
             <objects>
-                <viewController id="QvJ-1D-pgc" customClass="StartViewController" customModule="NavigatorTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QvJ-1D-pgc" customClass="StartViewController" customModule="MasterNotorious" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wqV-Bq-z3x">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MMT-v6-YmK">
-                                <rect key="frame" x="16" y="36" width="343" height="30"/>
+                                <rect key="frame" x="16" y="164" width="343" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyR-u6-ogt">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
@@ -1356,32 +1359,45 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chose your race and profession:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdO-0R-KnM">
-                                <rect key="frame" x="16" y="74" width="343" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2pi-7c-IXn">
-                                <rect key="frame" x="16" y="106" width="343" height="162"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="E85-qs-pdw">
+                                <rect key="frame" x="16" y="210" width="333" height="186"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chose your race and profession:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdO-0R-KnM">
+                                        <rect key="frame" x="0.0" y="0.0" width="333" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2pi-7c-IXn">
+                                        <rect key="frame" x="0.0" y="24" width="333" height="162"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="162" id="6lO-Bo-dYF"/>
+                                            <constraint firstAttribute="height" constant="162" id="csS-ag-Gl9"/>
+                                        </constraints>
+                                    </pickerView>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="162" id="6lO-Bo-dYF"/>
-                                    <constraint firstAttribute="height" constant="162" id="csS-ag-Gl9"/>
+                                    <constraint firstAttribute="height" constant="186" id="gV6-ZR-BMm"/>
                                 </constraints>
-                            </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bonus:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jIm-sO-kiF">
-                                <rect key="frame" x="16" y="284" width="343" height="25.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="enA-1I-VAB">
-                                <rect key="frame" x="16" y="317" width="343" height="130"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="130" id="MwF-dP-ohG"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="130" id="pWS-zE-ebK"/>
-                                </constraints>
-                            </pickerView>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vTi-qN-n9q">
+                                <rect key="frame" x="16" y="412" width="343" height="187.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bonus:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jIm-sO-kiF">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="25.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="enA-1I-VAB">
+                                        <rect key="frame" x="0.0" y="25.5" width="343" height="162"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="162" id="MwF-dP-ohG"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="162" id="pWS-zE-ebK"/>
+                                        </constraints>
+                                    </pickerView>
+                                </subviews>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktC-9A-ueq">
                                 <rect key="frame" x="16" y="603" width="343" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
@@ -1390,33 +1406,39 @@
                                     <action selector="startTapped:" destination="QvJ-1D-pgc" eventType="touchUpInside" id="2Rq-EA-jmp"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jewel" translatesAutoresizingMaskIntoConstraints="NO" id="28Y-2P-cOf">
+                                <rect key="frame" x="0.0" y="20" width="375" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="jsj-Gp-4PA"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="znY-yK-bQ1"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="MMT-v6-YmK" firstAttribute="top" secondItem="PbP-O6-b4c" secondAttribute="top" constant="16" id="1e6-5V-cza"/>
-                            <constraint firstItem="PbP-O6-b4c" firstAttribute="trailing" secondItem="enA-1I-VAB" secondAttribute="trailing" constant="16" id="54k-GC-bmN"/>
-                            <constraint firstItem="jIm-sO-kiF" firstAttribute="top" secondItem="2pi-7c-IXn" secondAttribute="bottom" constant="16" id="9CM-cF-uR6"/>
-                            <constraint firstItem="enA-1I-VAB" firstAttribute="leading" secondItem="PbP-O6-b4c" secondAttribute="leading" constant="16" id="9LR-EO-apE"/>
+                            <constraint firstItem="28Y-2P-cOf" firstAttribute="leading" secondItem="PbP-O6-b4c" secondAttribute="leading" id="14C-fS-CpN"/>
+                            <constraint firstItem="MMT-v6-YmK" firstAttribute="top" secondItem="28Y-2P-cOf" secondAttribute="bottom" constant="16" id="4K4-nU-Dti"/>
+                            <constraint firstItem="MMT-v6-YmK" firstAttribute="leading" secondItem="PbP-O6-b4c" secondAttribute="leading" constant="16" id="58k-FS-pbd"/>
+                            <constraint firstItem="28Y-2P-cOf" firstAttribute="trailing" secondItem="PbP-O6-b4c" secondAttribute="trailing" id="77c-ge-NxX"/>
                             <constraint firstItem="PbP-O6-b4c" firstAttribute="trailing" secondItem="MMT-v6-YmK" secondAttribute="trailing" constant="16" id="9TT-ts-xcv"/>
                             <constraint firstItem="PbP-O6-b4c" firstAttribute="bottom" secondItem="ktC-9A-ueq" secondAttribute="bottom" constant="20" id="AuK-N8-dd6"/>
-                            <constraint firstItem="jIm-sO-kiF" firstAttribute="leading" secondItem="PbP-O6-b4c" secondAttribute="leading" constant="16" id="EM2-fi-YOO"/>
+                            <constraint firstItem="vTi-qN-n9q" firstAttribute="leading" secondItem="PbP-O6-b4c" secondAttribute="leading" constant="16" id="CA5-4d-3WQ"/>
                             <constraint firstItem="PbP-O6-b4c" firstAttribute="trailing" secondItem="ktC-9A-ueq" secondAttribute="trailing" constant="16" id="Ex5-Y6-kKY"/>
-                            <constraint firstItem="jdO-0R-KnM" firstAttribute="leading" secondItem="PbP-O6-b4c" secondAttribute="leading" constant="16" id="Fij-Ye-oiU"/>
-                            <constraint firstItem="jdO-0R-KnM" firstAttribute="top" secondItem="MMT-v6-YmK" secondAttribute="bottom" constant="8" id="LYq-91-SC2"/>
-                            <constraint firstItem="enA-1I-VAB" firstAttribute="top" secondItem="jIm-sO-kiF" secondAttribute="bottom" constant="8" id="OhS-hN-WQe"/>
-                            <constraint firstItem="2pi-7c-IXn" firstAttribute="leading" secondItem="PbP-O6-b4c" secondAttribute="leading" constant="16" id="P52-Zk-xn4"/>
-                            <constraint firstItem="PbP-O6-b4c" firstAttribute="trailing" secondItem="2pi-7c-IXn" secondAttribute="trailing" constant="16" id="U3R-pj-1sE"/>
-                            <constraint firstItem="PbP-O6-b4c" firstAttribute="trailing" secondItem="jIm-sO-kiF" secondAttribute="trailing" constant="16" id="iO9-0h-dlp"/>
+                            <constraint firstItem="vTi-qN-n9q" firstAttribute="top" secondItem="E85-qs-pdw" secondAttribute="bottom" constant="16" id="J5J-di-hii"/>
+                            <constraint firstItem="E85-qs-pdw" firstAttribute="leading" secondItem="PbP-O6-b4c" secondAttribute="leading" constant="16" id="PQU-aR-dh0"/>
+                            <constraint firstItem="E85-qs-pdw" firstAttribute="top" secondItem="MMT-v6-YmK" secondAttribute="bottom" constant="16" id="agK-W7-jPK"/>
                             <constraint firstItem="ktC-9A-ueq" firstAttribute="leading" secondItem="PbP-O6-b4c" secondAttribute="leading" constant="16" id="ljU-hn-6j9"/>
-                            <constraint firstItem="2pi-7c-IXn" firstAttribute="top" secondItem="jdO-0R-KnM" secondAttribute="bottom" constant="8" id="mZH-3K-TTh"/>
-                            <constraint firstItem="MMT-v6-YmK" firstAttribute="leading" secondItem="PbP-O6-b4c" secondAttribute="leading" constant="16" id="yK4-EG-OX5"/>
-                            <constraint firstItem="PbP-O6-b4c" firstAttribute="trailing" secondItem="jdO-0R-KnM" secondAttribute="trailing" constant="16" id="zPt-Me-uDB"/>
+                            <constraint firstItem="28Y-2P-cOf" firstAttribute="top" secondItem="PbP-O6-b4c" secondAttribute="top" id="t5k-2T-VHq"/>
+                            <constraint firstItem="PbP-O6-b4c" firstAttribute="trailing" secondItem="vTi-qN-n9q" secondAttribute="trailing" constant="16" id="tcK-EL-NWO"/>
+                            <constraint firstItem="PbP-O6-b4c" firstAttribute="trailing" secondItem="E85-qs-pdw" secondAttribute="trailing" constant="26" id="yj4-ue-XLQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PbP-O6-b4c"/>
                     </view>
                     <navigationItem key="navigationItem" id="AvA-lo-MMO"/>
                     <connections>
                         <outlet property="bonusPickerView" destination="enA-1I-VAB" id="6HQ-qg-JL8"/>
+                        <outlet property="bonusStackView" destination="vTi-qN-n9q" id="jhN-L0-ueL"/>
+                        <outlet property="nameStackView" destination="MMT-v6-YmK" id="fLb-S2-xuU"/>
                         <outlet property="nameText" destination="m5n-An-Fm0" id="Phi-OK-hUY"/>
                         <outlet property="raceProfessionPickerView" destination="2pi-7c-IXn" id="y9L-O3-K5R"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="crossroadSegue" id="6xk-A6-o3c"/>
@@ -1447,7 +1469,7 @@
         <!--Player Container View Controller-->
         <scene sceneID="eBr-zE-cIj">
             <objects>
-                <viewController id="l5d-5l-J41" customClass="PlayerContainerViewController" customModule="NavigatorTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="l5d-5l-J41" customClass="PlayerContainerViewController" customModule="MasterNotorious" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="naa-5C-qT1">
                         <rect key="frame" x="0.0" y="0.0" width="343" height="130"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1652,7 +1674,7 @@
         <!--Item Shop View Controller-->
         <scene sceneID="guf-4z-Pj5">
             <objects>
-                <viewController id="Avc-e8-amH" customClass="ItemShopViewController" customModule="NavigatorTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Avc-e8-amH" customClass="ItemShopViewController" customModule="MasterNotorious" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="T4Y-P7-Bs1">
                         <rect key="frame" x="0.0" y="0.0" width="343" height="503"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1769,9 +1791,9 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ueV-ge-ume"/>
-        <segue reference="Mh1-JC-ao6"/>
+        <segue reference="iLa-kd-wf3"/>
         <segue reference="H9V-VU-Ouv"/>
-        <segue reference="8pw-bp-4v5"/>
-        <segue reference="hkE-ky-x03"/>
+        <segue reference="wWQ-ZA-K15"/>
+        <segue reference="6xk-A6-o3c"/>
     </inferredMetricsTieBreakers>
 </document>

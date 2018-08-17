@@ -23,8 +23,8 @@ class MasterNotoriousViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         setChallengeButton()
         if isLevelUp {
-            UserDefaultData.saveObj(obj: player!, key: defaultKeys.playerDataKey)
-            UserDefaultData.saveObj(obj: bank!, key: defaultKeys.bankDataKey)
+            playerRepository.updatePlayer(player: player!)
+            bankRepository.updateBankData(bank: bank!)
             showAlert(title: "Congratulations", message: "You have grown a little. Now you are level \(player?.level.current ?? 0)", uiViewController: self, actionToExecute: {
                  self.isLevelUp = false
             })

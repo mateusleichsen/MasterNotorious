@@ -10,6 +10,8 @@ import UIKit
 
 var player:Player?
 var bank:Bank?
+var playerRepository:PlayerRepository!
+var bankRepository:BankRepository!
 
 class StartViewController: UIViewController  {
     var isRestart:Bool = false
@@ -19,10 +21,14 @@ class StartViewController: UIViewController  {
     @IBOutlet weak var nameText: UITextField!
     @IBOutlet weak var raceProfessionPickerView: UIPickerView!
     @IBOutlet weak var bonusPickerView: UIPickerView!
+    @IBOutlet weak var nameStackView: UIStackView!
+    @IBOutlet weak var bonusStackView: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: true)
+        playerRepository = PlayerRepository(jewelryRepositry: JewelryRepository(), bonusRepository: BonusRepository(), skillRepository: SkillRepository())
+        bankRepository = BankRepository()
         
         setDataPickers()
         loadUserData()
@@ -33,15 +39,15 @@ class StartViewController: UIViewController  {
 
     override func viewDidAppear(_ animated: Bool) {
         if isRestart {
-            nameText.hide()
+            nameStackView.hide()
         } else {
-            nameText.show()
+            nameStackView.show()
         }
         
         if firstChar {
-            bonusPickerView.hide()
+            bonusStackView.hide()
         } else {
-            bonusPickerView.show()
+            bonusStackView.show()
         }
     }
     
@@ -60,6 +66,8 @@ class StartViewController: UIViewController  {
         if firstChar {
             player = Player(name: nameText.text!, race: race!, profession: profession!)
             firstChar = false
+            playerRepository.savePlayer(player: player!)
+            print("playersaved")
         }
         
         if isRestart {
@@ -81,10 +89,11 @@ class StartViewController: UIViewController  {
         
         if bank == nil {
             bank = Bank()
+            bankRepository.saveBankData(bank: bank!)
         }
         
-        UserDefaultData.saveObj(obj: player!, key: defaultKeys.playerDataKey)
-        UserDefaultData.saveObj(obj: bank!, key: defaultKeys.bankDataKey)
+        playerRepository.updatePlayer(player: player!)
+        bankRepository.updateBankData(bank: bank!)
         performSegue(withIdentifier: "crossroadSegue", sender: self)
     }
     
@@ -118,9 +127,9 @@ class StartViewController: UIViewController  {
     }
     
     fileprivate func loadUserData() {
-        if let data = UserDefaultData.loadObj(key: defaultKeys.playerDataKey) {
-            player = Player(data: data)
-        }
+        player = playerRepository.loadPlayer()
+        print("playerloaded")
+        print(player == nil ? "nil" : "nonil")
     }
 }
 

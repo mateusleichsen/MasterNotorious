@@ -38,6 +38,7 @@ class PriestViewController: UIViewController {
         player?.fullRecover()
         player?.decreaseStamina()
         playerContainerVC.updateStatus()
+        playerRepository.updatePlayer(player: player!)
         showAlert(title: "Your wounds are past", message: "You are skinny, you shall eat more pasta.", uiViewController: self)
     }
     

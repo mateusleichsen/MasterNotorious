@@ -18,6 +18,7 @@ class HouseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         sleepProgress.progress = 0.0
+        sleepButton.setStandard()
         // Do any additional setup after loading the view.
     }
 
@@ -55,8 +56,8 @@ class HouseViewController: UIViewController {
                         self.isSleeping = false
                     }
                     self.playerContainerVC.updateStatus()
-                    UserDefaultData.saveObj(obj: player!, key: defaultKeys.playerDataKey)
-                    UserDefaultData.saveObj(obj: bank!, key: defaultKeys.bankDataKey)
+                    playerRepository.updatePlayer(player: player!)
+                    bankRepository.updateBankData(bank: bank!)
                 }
             }
         }

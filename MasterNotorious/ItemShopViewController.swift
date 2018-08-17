@@ -39,8 +39,8 @@ class ItemShopViewController: UIViewController,UIPickerViewDataSource,UIPickerVi
             player?.spend(item.price - priceDiscount)
             buyButtonTap(item)
             updateLabels(item: item)
-            UserDefaultData.saveObj(obj: player!, key: defaultKeys.playerDataKey)
-            UserDefaultData.saveObj(obj: bank!, key: defaultKeys.bankDataKey)
+            playerRepository.updatePlayer(player: player!)
+            bankRepository.updateBankData(bank: bank!)
             showAlert(title: "Have a nice hunt!", message: "You have bought \(item.name) for \(item.price)gp", uiViewController: self)
         }
     }

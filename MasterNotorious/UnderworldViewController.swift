@@ -40,9 +40,6 @@ class UnderworldViewController: UIViewController {
         healthGatekeeperLabel.text = "\(healthGatekeeper)"
         
         if healthGatekeeper <= 0 {
-//            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-//            let mainVC = storyBoard.instantiateViewController(withIdentifier: "mainViewStoryID") as! ViewController
-//            self.present(mainVC, animated: true, completion: nil)
             performSegue(withIdentifier: "mainSegueFromUnder", sender: self)
         }
     }

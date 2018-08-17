@@ -14,8 +14,8 @@ class RestartViewController: UIViewController {
         super.viewDidLoad()
         player?.restart((player?.restartCount)!)
         bank?.cleanAccount()
-        UserDefaultData.saveObj(obj: player!, key: defaultKeys.playerDataKey)
-        UserDefaultData.saveObj(obj: bank!, key: defaultKeys.bankDataKey)
+        playerRepository.updatePlayer(player: player!)
+        bankRepository.updateBankData(bank: bank!)
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

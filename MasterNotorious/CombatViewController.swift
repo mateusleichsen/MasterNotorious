@@ -138,8 +138,7 @@ class CombatViewController: UIViewController {
                 if (player?.level.current)! < 15 {
                     player?.level.levelUp()
                 } else {
-                    UserDefaultData.saveObj(obj: player!, key: defaultKeys.playerDataKey)
-                    UserDefaultData.saveObj(obj: bank!, key: defaultKeys.bankDataKey)
+                    playerRepository.updatePlayer(player:player!)
                     performSegue(withIdentifier: "restartSegue", sender: self)
                 }
             } else {
@@ -152,8 +151,7 @@ class CombatViewController: UIViewController {
             player?.decreaseStamina()
         }
         
-        UserDefaultData.saveObj(obj: player!, key: defaultKeys.playerDataKey)
-        UserDefaultData.saveObj(obj: bank!, key: defaultKeys.bankDataKey)
+        playerRepository.updatePlayer(player: player!)
         _ = navigationController?.popViewController(animated: true)
     }
     
@@ -254,8 +252,7 @@ class CombatViewController: UIViewController {
             player?.stamina = (player?.maxStamina)!
             player?.gold = Int((player?.gold)! / 2)
             player?.level.exp = Int(Double((player?.level.exp)!) * 0.9)
-            UserDefaultData.saveObj(obj: player!, key: defaultKeys.playerDataKey)
-            UserDefaultData.saveObj(obj: bank!, key: defaultKeys.bankDataKey)
+            playerRepository.updatePlayer(player: player!)
             
             performSegue(withIdentifier: "underSegue", sender: self)
         } else {
@@ -274,8 +271,7 @@ class CombatViewController: UIViewController {
         runButton.setTitle("Exit", for: .normal)
         disableButtons()
         playerContainerVC?.updateStatus()
-        UserDefaultData.saveObj(obj: player!, key: defaultKeys.playerDataKey)
-        UserDefaultData.saveObj(obj: bank!, key: defaultKeys.bankDataKey)
+        playerRepository.updatePlayer(player: player!)
     }
     
     fileprivate func addCombatResultText(_ text:String) {

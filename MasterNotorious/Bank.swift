@@ -22,7 +22,7 @@ class Bank {
         self.deposits = data
     }
     
-    func loadLoans(data:[(Date,Decimal)]) {
+    func loadLoans(_ data:[(Date,Decimal)]) {
         self.loans = data
     }
     
@@ -154,4 +154,8 @@ class Bank {
         }
         timer?.resume()
     }
+}
+
+enum eBankData:Int {
+    case deposit = 0, loan = 1
 }

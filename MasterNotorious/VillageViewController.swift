@@ -10,10 +10,22 @@ import UIKit
 
 class VillageViewController: UIViewController {
     var playerContainerVC:PlayerContainerViewController?
-
+    @IBOutlet weak var smithButton: UIButton!
+    @IBOutlet weak var armourButton: UIButton!
+    @IBOutlet weak var jewelyButton: UIButton!
+    @IBOutlet weak var bankizButton: UIButton!
+    @IBOutlet weak var priestButton: UIButton!
+    @IBOutlet weak var notoriousButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        smithButton.setStandard()
+        armourButton.setStandard()
+        jewelyButton.setStandard()
+        bankizButton.setStandard()
+        priestButton.setStandard()
+        notoriousButton.setStandard()
         // Do any additional setup after loading the view.
     }
 

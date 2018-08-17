@@ -118,6 +118,8 @@ class MrBankizViewController: UIViewController {
             let doubleAmount = NSDecimalNumber(decimal: bank?.amount ?? 0).doubleValue
             self.bankGoldLabel.text = NSString(format: "%.4f", doubleAmount) as String
             self.borrowLabel.text = "\(self.borrowValue!)gp"
+            playerRepository.updatePlayer(player: player!)
+            bankRepository.updateBankData(bank: bank!)
         }
     }
 }

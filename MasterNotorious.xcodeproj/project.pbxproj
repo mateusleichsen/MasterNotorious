@@ -14,7 +14,8 @@
 		9018BC33211E6EDA00F4A043 /* MissJewelryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9018BC32211E6EDA00F4A043 /* MissJewelryViewController.swift */; };
 		902579CF21237C5500EB3240 /* RestartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902579CE21237C5500EB3240 /* RestartViewController.swift */; };
 		902579D32123840800EB3240 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902579D22123840800EB3240 /* StartViewController.swift */; };
-		902579F72124FDD900EB3240 /* NavigatorModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 902579F52124FDD800EB3240 /* NavigatorModel.xcdatamodeld */; };
+		902579F72124FDD900EB3240 /* MasterNotoriousModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 902579F52124FDD800EB3240 /* MasterNotoriousModel.xcdatamodeld */; };
+		90257A1C21262C7D00EB3240 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90257A1B21262C7D00EB3240 /* Repository.swift */; };
 		90308035211F70D8001A351A /* MrBankizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90308034211F70D8001A351A /* MrBankizViewController.swift */; };
 		90308037211F726D001A351A /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90308036211F726D001A351A /* Bank.swift */; };
 		903080392120FBE5001A351A /* MasterNotoriousViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903080382120FBE5001A351A /* MasterNotoriousViewController.swift */; };
@@ -49,6 +50,7 @@
 		902579CE21237C5500EB3240 /* RestartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestartViewController.swift; sourceTree = "<group>"; };
 		902579D22123840800EB3240 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		902579F62124FDD800EB3240 /* NavigatorModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NavigatorModel.xcdatamodel; sourceTree = "<group>"; };
+		90257A1B21262C7D00EB3240 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		90308034211F70D8001A351A /* MrBankizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrBankizViewController.swift; sourceTree = "<group>"; };
 		90308036211F726D001A351A /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
 		903080382120FBE5001A351A /* MasterNotoriousViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterNotoriousViewController.swift; sourceTree = "<group>"; };
@@ -107,7 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				905E825A2115F0B800846DC5 /* AppDelegate.swift */,
-				902579F52124FDD800EB3240 /* NavigatorModel.xcdatamodeld */,
+				902579F52124FDD800EB3240 /* MasterNotoriousModel.xcdatamodeld */,
 				902579D22123840800EB3240 /* StartViewController.swift */,
 				905E825E2115F0B800846DC5 /* Main.storyboard */,
 				905E825C2115F0B800846DC5 /* CrossroadViewController.swift */,
@@ -137,6 +139,7 @@
 				905E827A21190AD300846DC5 /* Extensions.swift */,
 				905E8280211BAEFB00846DC5 /* Dice.swift */,
 				905E8282211BBA9000846DC5 /* Helpers.swift */,
+				90257A1B21262C7D00EB3240 /* Repository.swift */,
 				905E828A211CFDCA00846DC5 /* Slip.swift */,
 			);
 			path = MasterNotorious;
@@ -220,6 +223,7 @@
 				909DB30621224B630033CCF7 /* UnderworldViewController.swift in Sources */,
 				902579D32123840800EB3240 /* StartViewController.swift in Sources */,
 				905E8289211CF29300846DC5 /* VillageViewController.swift in Sources */,
+				90257A1C21262C7D00EB3240 /* Repository.swift in Sources */,
 				905E827B21190AD300846DC5 /* Extensions.swift in Sources */,
 				905E827721189FBD00846DC5 /* ForestViewController.swift in Sources */,
 				90308037211F726D001A351A /* Bank.swift in Sources */,
@@ -228,7 +232,7 @@
 				9018BC2D211E258500F4A043 /* SteeleSmithViewController.swift in Sources */,
 				905E828D211D1A2F00846DC5 /* HouseViewController.swift in Sources */,
 				9018BC33211E6EDA00F4A043 /* MissJewelryViewController.swift in Sources */,
-				902579F72124FDD900EB3240 /* NavigatorModel.xcdatamodeld in Sources */,
+				902579F72124FDD900EB3240 /* MasterNotoriousModel.xcdatamodeld in Sources */,
 				905E827F211A7E3200846DC5 /* RagHealHutViewController.swift in Sources */,
 				9018BC2F211E520000F4A043 /* ItemShopViewController.swift in Sources */,
 				905E8281211BAEFB00846DC5 /* Dice.swift in Sources */,
@@ -386,7 +390,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 325JNH32TP;
-				INFOPLIST_FILE = NavigatorTest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MasterNotorious/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -404,7 +408,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 325JNH32TP;
-				INFOPLIST_FILE = NavigatorTest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MasterNotorious/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,13 +444,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		902579F52124FDD800EB3240 /* NavigatorModel.xcdatamodeld */ = {
+		902579F52124FDD800EB3240 /* MasterNotoriousModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				902579F62124FDD800EB3240 /* NavigatorModel.xcdatamodel */,
 			);
 			currentVersion = 902579F62124FDD800EB3240 /* NavigatorModel.xcdatamodel */;
-			path = NavigatorModel.xcdatamodeld;
+			path = MasterNotoriousModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

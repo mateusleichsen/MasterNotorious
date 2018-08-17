@@ -9,6 +9,12 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="value" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
+    <entity name="JewelryModel" representedClassName="JewelryModel" syncable="YES" codeGenerationType="class">
+        <attribute name="bonus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bonusValue" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
     <entity name="PlayerModel" representedClassName="PlayerModel" syncable="YES" codeGenerationType="class">
         <attribute name="armorName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="attack" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
@@ -16,7 +22,6 @@
         <attribute name="exp" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="gold" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="health" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="jewelryName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="mana" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="maxHealth" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="maxMana" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
@@ -30,12 +35,12 @@
     </entity>
     <entity name="SkillModel" representedClassName="SkillModel" syncable="YES" codeGenerationType="class">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="value" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
     <elements>
-        <element name="PlayerModel" positionX="-63" positionY="-18" width="128" height="300"/>
-        <element name="SkillModel" positionX="-54" positionY="117" width="128" height="75"/>
-        <element name="BonusModel" positionX="-36" positionY="144" width="128" height="75"/>
-        <element name="BankModel" positionX="-18" positionY="135" width="128" height="90"/>
+        <element name="PlayerModel" positionX="-315" positionY="-18" width="128" height="283"/>
+        <element name="SkillModel" positionX="-162" positionY="-18" width="128" height="58"/>
+        <element name="BonusModel" positionX="-162" positionY="189" width="128" height="75"/>
+        <element name="BankModel" positionX="-162" positionY="81" width="128" height="90"/>
+        <element name="JewelryModel" positionX="-470" positionY="-18" width="128" height="103"/>
     </elements>
 </model>

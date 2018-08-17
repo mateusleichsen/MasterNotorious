@@ -11,9 +11,17 @@ import UIKit
 class ForestViewController: UIViewController {
     @IBOutlet weak var playerContainerView: UIView!
     var playerContainerVC:PlayerContainerViewController?
+    @IBOutlet weak var huntButton: UIButton!
+    @IBOutlet weak var ambushButton: UIButton!
+    @IBOutlet weak var banditCampButton: UIButton!
+    @IBOutlet weak var ragHutButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        huntButton.setStandard()
+        ambushButton.setStandard()
+        banditCampButton.setStandard()
+        ragHutButton.setStandard()
         // Do any additional setup after loading the view.
     }
 

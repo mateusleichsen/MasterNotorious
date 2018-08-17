@@ -58,6 +58,7 @@ class RagHealHutViewController: UIViewController {
             player?.heal(self.amountToHeal)
             showAlert(title: "You are HEALED", message: "But was it necessery to eat a hearth?", uiViewController:self)
             updateStatus()
+            playerRepository.updatePlayer(player: player!)
             setInitialValues()
         }
     }
@@ -79,6 +80,7 @@ class RagHealHutViewController: UIViewController {
             player?.recover(self.amountToRecover)
             showAlert(title: "Did you feel that?", message: "Sweet recovery.", uiViewController:self)
             updateStatus()
+            playerRepository.updatePlayer(player: player!)
             setInitialValues()
         }
     }
