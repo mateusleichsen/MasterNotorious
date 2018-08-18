@@ -41,6 +41,7 @@ class RagHealHutViewController: UIViewController {
             self.playerContainerVC = playerContainerVC
         }
     }
+    
     @IBAction func healSliderChanged(_ sender: Any) {
         let slider = sender as! UISlider
         let results = calculateHealValues(slider: slider)

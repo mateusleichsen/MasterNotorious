@@ -133,27 +133,6 @@ class StartViewController: UIViewController  {
             bank = Bank()
             bankRepository.saveBankData(bank: bank!)
         }
-        
-        player?.level.exp = 1000000
-        player?.level.levelUp()
-        player?.level.levelUp()
-        player?.level.levelUp()
-        player?.level.levelUp()
-        player?.level.levelUp()
-        player?.level.levelUp()
-        player?.level.levelUp()
-        player?.level.levelUp()
-        player?.level.levelUp()
-        player?.level.levelUp()
-        player?.level.levelUp()
-        player?.level.levelUp()
-        player?.level.levelUp()
-        player?.level.levelUp()
-        player?.weapon = Weapon(type: .light_saber, price: 199)
-        player?.armor = Armor(type: .green_tunic, price: 199)
-        player?.maxHealth = 1000
-        player?.health = 1000
-        player?.attack = 400
     }
 }
 

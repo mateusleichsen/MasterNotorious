@@ -1092,6 +1092,7 @@
                         <outlet property="skillStackView" destination="ufK-Bf-06d" id="uen-tt-yX5"/>
                         <segue destination="e4i-vo-JBH" kind="show" identifier="underSegue" id="mAk-pz-lPK"/>
                         <segue destination="52B-sL-cws" kind="show" identifier="restartSegue" id="N9T-rr-wgy"/>
+                        <segue destination="89F-vw-Z20" kind="show" identifier="masterSegue" id="Ood-12-xa7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GJO-rh-Jk6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1339,7 +1340,7 @@
                                         <rect key="frame" x="50" y="0.0" width="293" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -1777,7 +1778,8 @@
         <segue reference="ueV-ge-ume"/>
         <segue reference="Mh1-JC-ao6"/>
         <segue reference="Noz-Da-kc0"/>
-        <segue reference="wWQ-ZA-K15"/>
+        <segue reference="8pw-bp-4v5"/>
+        <segue reference="Ood-12-xa7"/>
         <segue reference="6xk-A6-o3c"/>
     </inferredMetricsTieBreakers>
 </document>

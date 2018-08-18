@@ -349,4 +349,8 @@ class Level {
     func levelUp() {
         self.current += 1
     }
+    
+    func reloadLevel(level:Int) {
+        self.current = level
+    }
 }

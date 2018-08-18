@@ -22,6 +22,7 @@
         <attribute name="exp" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="gold" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="health" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="level" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="mana" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="maxHealth" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="maxMana" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
@@ -37,7 +38,7 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="PlayerModel" positionX="-315" positionY="-18" width="128" height="283"/>
+        <element name="PlayerModel" positionX="-315" positionY="-18" width="128" height="298"/>
         <element name="SkillModel" positionX="-162" positionY="-18" width="128" height="58"/>
         <element name="BonusModel" positionX="-162" positionY="189" width="128" height="75"/>
         <element name="BankModel" positionX="-162" positionY="81" width="128" height="90"/>

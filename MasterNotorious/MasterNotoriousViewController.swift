@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol MasterNotoriousDelegate {
+    func setLevelUp()
+}
+
 class MasterNotoriousViewController: UIViewController {
     @IBOutlet weak var challengeButton:UIButton!
     var isLevelUp:Bool = false
@@ -39,7 +43,11 @@ class MasterNotoriousViewController: UIViewController {
         if let combatVC = segue.destination as? CombatViewController {
             if segue.identifier == "segueChallenge" {
                 combatVC.mode = .master
+                combatVC.delegate = self
             }
+        }
+        if segue.source is CombatViewController {
+            isLevelUp = true
         }
     }
     
@@ -68,4 +76,13 @@ class MasterNotoriousViewController: UIViewController {
             showAlert(title: "Ready!?", message: "No, you need training more, you need at least \(expMissing) experience", uiViewController: self)
         }
     }
+}
+
+extension MasterNotoriousViewController: MasterNotoriousDelegate {
+    func setLevelUp() {
+        self.isLevelUp = true
+        print("someone called")
+    }
+    
+    
 }

@@ -85,6 +85,7 @@ extension Player {
         let race = obj.value(forKey: "race") as! String
         let profession = obj.value(forKey: "profession") as! String
         let exp = obj.value(forKey: "exp") as! Int
+        let level = obj.value(forKey: "level") as! Int
         let health = obj.value(forKey: "health") as! Int
         let maxHealth = obj.value(forKey: "maxHealth") as! Int
         let mana = obj.value(forKey: "mana") as! Int
@@ -101,6 +102,7 @@ extension Player {
         self.init(name: name, race: eRace(rawValue: race)!, profession: eProfession(rawValue: profession)!)
         
         self.level = Level(exp: exp)
+        self.level.reloadLevel(level: level)
         self.health = health
         self.maxHealth = maxHealth
         self.mana = mana

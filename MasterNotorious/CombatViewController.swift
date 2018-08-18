@@ -29,6 +29,7 @@ class CombatViewController: UIViewController {
     var playerContainerVC:PlayerContainerViewController?
     var skillStackViewWidth:CGFloat!
     var skillStackViewHeight:CGFloat!
+    var delegate:MasterNotoriousDelegate?
     
     var mode:eMode = .easy
     var playerFirst = true
@@ -96,11 +97,6 @@ class CombatViewController: UIViewController {
         if let playerContainerVC = segue.destination as? PlayerContainerViewController {
             self.playerContainerVC = playerContainerVC
         }
-        
-        if let masterNotoriousVC = segue.destination as? MasterNotoriousViewController {
-            print("level up")
-            masterNotoriousVC.isLevelUp = true
-        }
     }
     
     @IBAction func attackTapped(_ sender: Any) {
@@ -139,6 +135,7 @@ class CombatViewController: UIViewController {
                 if (player?.level.current)! < 15 {
                     player?.level.levelUp()
                     player?.calculateLevel()
+                    self.delegate?.setLevelUp()
                 } else {
                     playerRepository.updatePlayer(player:player!)
                     performSegue(withIdentifier: "restartSegue", sender: self)

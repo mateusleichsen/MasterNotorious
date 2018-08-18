@@ -167,6 +167,7 @@ class PlayerRepository:Repository {
         obj["race"] = player.race.rawValue
         obj["profession"] = player.profession.rawValue
         obj["exp"] = player.level.exp
+        obj["level"] = player.level.current
         obj["health"] = player.health
         obj["maxHealth"] = player.maxHealth
         obj["mana"] = player.mana
