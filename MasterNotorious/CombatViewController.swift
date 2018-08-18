@@ -23,12 +23,13 @@ class CombatViewController: UIViewController {
     @IBOutlet weak var attack10Button: UIButton!
     @IBOutlet weak var attackButton: UIButton!
     @IBOutlet weak var skillStackView: UIStackView!
+    @IBOutlet weak var skillContainerView: UIView!
     @IBOutlet weak var runButton: UIButton!
     @IBOutlet weak var combatResultScrollView: UIScrollView!
     @IBOutlet weak var combatResultLabel: UILabel!
     var playerContainerVC:PlayerContainerViewController?
-    var skillStackViewWidth:CGFloat!
-    var skillStackViewHeight:CGFloat!
+    var skillStackViewWidth:CGFloat = 0
+    var skillStackViewHeight:CGFloat = 0
     var delegate:MasterNotoriousDelegate?
     
     var mode:eMode = .easy
@@ -44,6 +45,14 @@ class CombatViewController: UIViewController {
             playerFirst = false
         }
         
+        self.navigationItem.setHidesBackButton(true, animated: true)
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         combatResultScrollView.contentLayoutGuide.bottomAnchor.constraint(equalTo: combatResultLabel.bottomAnchor).isActive = true
         combatResultScrollView.layer.borderWidth = 1
         combatResultScrollView.layer.borderColor = UIColor.gray.cgColor
@@ -55,17 +64,10 @@ class CombatViewController: UIViewController {
         setBorder(uiView: attack10Button)
         setBorder(uiView: skill1Button)
         setBorder(uiView: skill2Button)
+        setBorder(uiView: skillContainerView, color: UIColor(red: 0, green: 0, blue: 0, alpha: 0).cgColor)
         
-        skillStackView.hide()
-        skillStackViewWidth = skillStackView.frame.width + 50
-        skillStackViewHeight = skillStackView.frame.height
-        skillStackView.frame = CGRect(x: attackButton.frame.origin.x, y: attackButton.frame.origin.y, width: 0, height: 0)
-        
-        self.navigationItem.setHidesBackButton(true, animated: true)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+        skillContainerView.hide()
+        skillContainerView.frame = CGRect(x: attackButton.frame.origin.x, y: attackButton.frame.origin.y, width: 0, height: 0)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -188,15 +190,22 @@ class CombatViewController: UIViewController {
     }
     
     fileprivate func showAnimatedButtons() {
-        self.skillStackView.show()
-        skillStackView.frame = CGRect(x: attackButton.frame.origin.x, y: attackButton.frame.origin.y, width: skillStackViewWidth, height: skillStackViewHeight)
+        self.skillContainerView.show()
+        if skillStackViewHeight == 0 {
+            skillStackViewWidth = (skillStackView.subviews.first?.frame.width)!
+            skillStackViewHeight = skillStackView.frame.height
+        }
+        let positionY: CGFloat = attackButton.frame.origin.y - skillStackViewHeight - 10 + attackButton.frame.height
+        skillContainerView.frame = CGRect(x: attackButton.frame.origin.x, y: positionY, width: skillStackViewWidth + 10, height: skillStackViewHeight + 10)
         attackButton.hide()
+        runButton.hide()
     }
     
     fileprivate func hideAnimatedButtons() {
-        self.skillStackView.hide()
-        skillStackView.frame = CGRect(x: attackButton.frame.origin.x, y: attackButton.frame.origin.y, width: 0, height: 0)
+        skillContainerView.frame = CGRect(x: attackButton.frame.origin.x, y: attackButton.frame.origin.y, width: 0, height: 0)
+        self.skillContainerView.hide()
         attackButton.show()
+        runButton.show()
     }
     
     func disableButtons() {

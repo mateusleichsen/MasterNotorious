@@ -998,52 +998,71 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DeU-Zj-xJJ">
-                                <rect key="frame" x="329" y="627" width="30" height="30"/>
+                                <rect key="frame" x="324" y="621" width="35" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Run"/>
                                 <connections>
                                     <action selector="runTapped:" destination="Et6-nk-nLD" eventType="touchUpInside" id="T7F-qk-kvL"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ufK-Bf-06d">
-                                <rect key="frame" x="16" y="627" width="203" height="30"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hCW-Bc-EMa">
+                                <rect key="frame" x="16" y="465" width="56" height="192"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="taZ-BB-yoB">
-                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
-                                        <state key="normal" title="1x"/>
-                                        <connections>
-                                            <action selector="attack1Tapped:" destination="Et6-nk-nLD" eventType="touchUpInside" id="Kck-0X-ddv"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vcx-EQ-uwy">
-                                        <rect key="frame" x="38" y="0.0" width="30" height="30"/>
-                                        <state key="normal" title="5x"/>
-                                        <connections>
-                                            <action selector="attack5Tapped:" destination="Et6-nk-nLD" eventType="touchUpInside" id="M3t-uD-KlP"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BRl-JF-yc1">
-                                        <rect key="frame" x="76" y="0.0" width="30" height="30"/>
-                                        <state key="normal" title="10x"/>
-                                        <connections>
-                                            <action selector="attack10Tapped:" destination="Et6-nk-nLD" eventType="touchUpInside" id="jND-Es-EX2"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xs6-sh-HH2">
-                                        <rect key="frame" x="114" y="0.0" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
-                                        <connections>
-                                            <action selector="skill2Tapped:" destination="Et6-nk-nLD" eventType="touchUpInside" id="TXp-al-78g"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJ8-tc-Z23">
-                                        <rect key="frame" x="168" y="0.0" width="35" height="30"/>
-                                        <state key="normal" title="Skill1"/>
-                                        <connections>
-                                            <action selector="skill1Tapped:" destination="Et6-nk-nLD" eventType="touchUpInside" id="4Cv-dI-hV5"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ufK-Bf-06d">
+                                        <rect key="frame" x="5" y="5" width="46" height="182"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="taZ-BB-yoB">
+                                                <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="1x"/>
+                                                <connections>
+                                                    <action selector="attack1Tapped:" destination="Et6-nk-nLD" eventType="touchUpInside" id="Kck-0X-ddv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vcx-EQ-uwy">
+                                                <rect key="frame" x="0.0" y="38" width="46" height="30"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="5x"/>
+                                                <connections>
+                                                    <action selector="attack5Tapped:" destination="Et6-nk-nLD" eventType="touchUpInside" id="M3t-uD-KlP"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BRl-JF-yc1">
+                                                <rect key="frame" x="0.0" y="76" width="46" height="30"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="10x"/>
+                                                <connections>
+                                                    <action selector="attack10Tapped:" destination="Et6-nk-nLD" eventType="touchUpInside" id="jND-Es-EX2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xs6-sh-HH2">
+                                                <rect key="frame" x="0.0" y="114" width="46" height="30"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="skill2Tapped:" destination="Et6-nk-nLD" eventType="touchUpInside" id="TXp-al-78g"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJ8-tc-Z23">
+                                                <rect key="frame" x="0.0" y="152" width="46" height="30"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Skill1"/>
+                                                <connections>
+                                                    <action selector="skill1Tapped:" destination="Et6-nk-nLD" eventType="touchUpInside" id="4Cv-dI-hV5"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.63137257099151611" green="0.92156863212585449" blue="0.62352943420410156" alpha="0.50361194349315064" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </stackView>
                                 </subviews>
-                            </stackView>
+                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ufK-Bf-06d" firstAttribute="leading" secondItem="hCW-Bc-EMa" secondAttribute="leading" constant="5" id="ZGs-fU-Zfn"/>
+                                    <constraint firstItem="ufK-Bf-06d" firstAttribute="top" secondItem="hCW-Bc-EMa" secondAttribute="top" constant="5" id="oNa-g2-hxn"/>
+                                    <constraint firstAttribute="bottom" secondItem="ufK-Bf-06d" secondAttribute="bottom" constant="5" id="vwo-Jb-BYV"/>
+                                    <constraint firstAttribute="trailing" secondItem="ufK-Bf-06d" secondAttribute="trailing" constant="5" id="waW-SR-bJE"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -1054,17 +1073,14 @@
                             <constraint firstItem="1uI-yc-A5r" firstAttribute="bottom" secondItem="DeU-Zj-xJJ" secondAttribute="bottom" constant="10" id="85f-HE-Q2k"/>
                             <constraint firstItem="1uI-yc-A5r" firstAttribute="bottom" secondItem="SPZ-Tt-GDH" secondAttribute="bottom" constant="10" id="Cfp-l0-swR"/>
                             <constraint firstItem="1uI-yc-A5r" firstAttribute="trailing" secondItem="sJg-xT-8XG" secondAttribute="trailing" constant="16" id="CkA-su-VRo"/>
+                            <constraint firstItem="1uI-yc-A5r" firstAttribute="bottom" secondItem="hCW-Bc-EMa" secondAttribute="bottom" constant="10" id="G3e-vM-HRK"/>
                             <constraint firstItem="ZCB-Me-kl0" firstAttribute="top" secondItem="wOp-6n-HOj" secondAttribute="bottom" constant="8" symbolic="YES" id="P0e-27-mxa"/>
                             <constraint firstItem="bOp-Em-UCq" firstAttribute="leading" secondItem="mxA-gr-ZRf" secondAttribute="leading" constant="16" id="QgZ-sQ-Yrx"/>
-                            <constraint firstItem="1uI-yc-A5r" firstAttribute="bottom" secondItem="ufK-Bf-06d" secondAttribute="bottom" constant="10" id="RPM-OY-kkF"/>
+                            <constraint firstItem="hCW-Bc-EMa" firstAttribute="leading" secondItem="1uI-yc-A5r" secondAttribute="leading" constant="16" id="R5F-j9-042"/>
                             <constraint firstItem="ZCB-Me-kl0" firstAttribute="leading" secondItem="1uI-yc-A5r" secondAttribute="leading" constant="16" id="SXL-qh-pGM"/>
-                            <constraint firstItem="1uI-yc-A5r" firstAttribute="bottom" secondItem="ufK-Bf-06d" secondAttribute="bottom" constant="10" id="Tgt-bm-f79"/>
                             <constraint firstItem="sJg-xT-8XG" firstAttribute="top" secondItem="ZCB-Me-kl0" secondAttribute="bottom" constant="8" id="YdZ-PE-jq2"/>
-                            <constraint firstAttribute="bottom" secondItem="ufK-Bf-06d" secondAttribute="bottom" constant="10" id="fw5-rO-DuT"/>
-                            <constraint firstItem="ufK-Bf-06d" firstAttribute="leading" secondItem="mxA-gr-ZRf" secondAttribute="leading" constant="16" id="fxU-6D-EAU"/>
                             <constraint firstAttribute="trailing" secondItem="bOp-Em-UCq" secondAttribute="trailing" constant="16" id="gxn-u2-pI6"/>
                             <constraint firstItem="wOp-6n-HOj" firstAttribute="top" secondItem="1uI-yc-A5r" secondAttribute="top" id="iZD-gy-6Ja"/>
-                            <constraint firstItem="DeU-Zj-xJJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mxA-gr-ZRf" secondAttribute="leading" constant="3" id="j98-hI-oQT"/>
                             <constraint firstItem="wOp-6n-HOj" firstAttribute="trailing" secondItem="1uI-yc-A5r" secondAttribute="trailing" id="jWK-hh-bLX"/>
                             <constraint firstItem="SPZ-Tt-GDH" firstAttribute="top" secondItem="bOp-Em-UCq" secondAttribute="bottom" constant="9" id="oP3-ea-ghY"/>
                             <constraint firstItem="DeU-Zj-xJJ" firstAttribute="trailing" secondItem="1uI-yc-A5r" secondAttribute="trailing" constant="-16" id="sfg-fT-Av7"/>
@@ -1089,6 +1105,7 @@
                         <outlet property="runButton" destination="DeU-Zj-xJJ" id="hRA-bA-KQc"/>
                         <outlet property="skill1Button" destination="ZJ8-tc-Z23" id="wRn-An-Nhj"/>
                         <outlet property="skill2Button" destination="Xs6-sh-HH2" id="SgI-bC-3rL"/>
+                        <outlet property="skillContainerView" destination="hCW-Bc-EMa" id="tL1-Bl-P9A"/>
                         <outlet property="skillStackView" destination="ufK-Bf-06d" id="uen-tt-yX5"/>
                         <segue destination="e4i-vo-JBH" kind="show" identifier="underSegue" id="mAk-pz-lPK"/>
                         <segue destination="52B-sL-cws" kind="show" identifier="restartSegue" id="N9T-rr-wgy"/>
@@ -1319,7 +1336,7 @@
             </objects>
             <point key="canvasLocation" x="961" y="86"/>
         </scene>
-        <!--Start View Controller-->
+        <!--Notorious-->
         <scene sceneID="I6o-6J-Ny7">
             <objects>
                 <viewController id="QvJ-1D-pgc" customClass="StartViewController" customModule="MasterNotorious" customModuleProvider="target" sceneMemberID="viewController">
@@ -1336,11 +1353,11 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m5n-An-Fm0">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="m5n-An-Fm0">
                                         <rect key="frame" x="50" y="0.0" width="293" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -1419,7 +1436,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PbP-O6-b4c"/>
                     </view>
-                    <navigationItem key="navigationItem" id="AvA-lo-MMO"/>
+                    <navigationItem key="navigationItem" title="Notorious" id="AvA-lo-MMO"/>
                     <connections>
                         <outlet property="bonusPickerView" destination="enA-1I-VAB" id="6HQ-qg-JL8"/>
                         <outlet property="bonusStackView" destination="vTi-qN-n9q" id="jhN-L0-ueL"/>

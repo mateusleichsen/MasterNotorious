@@ -13,7 +13,7 @@ var bank:Bank?
 var playerRepository:PlayerRepository!
 var bankRepository:BankRepository!
 
-class StartViewController: UIViewController  {
+class StartViewController: UIViewController, UITextFieldDelegate  {
     var isRestart:Bool = false
     var firstChar:Bool = player == nil
     var raceProfessionPicker:RaceProfessionPicker!
@@ -29,7 +29,7 @@ class StartViewController: UIViewController  {
         self.navigationItem.setHidesBackButton(true, animated: true)
         playerRepository = PlayerRepository(jewelryRepositry: JewelryRepository(), bonusRepository: BonusRepository(), skillRepository: SkillRepository())
         bankRepository = BankRepository()
-        
+        self.nameText.delegate = self
         setDataPickers()
         loadUserData()
         if player != nil && !isRestart {
@@ -54,6 +54,11 @@ class StartViewController: UIViewController  {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
     
     @IBAction func startTapped(_ sender: Any) {

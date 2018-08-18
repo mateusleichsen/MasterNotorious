@@ -121,7 +121,6 @@ class RagHealHutViewController: UIViewController {
         if (player?.level.current)! > 1 {
             cost = Int(Float(((player?.maxHealth)! - (player?.health)!) * (player?.level.current)!) * roundedValue / 100.0)
         }
-        cost = Int(Float(((player?.maxHealth)! - (player?.health)!) * (player?.level.current)!) * roundedValue / 100.0)
         
         return (cost,roundedValue)
     }

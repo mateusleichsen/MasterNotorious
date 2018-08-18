@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MrBankizViewController: UIViewController {
+class MrBankizViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var depositText: UITextField!
     @IBOutlet weak var withdrawText: UITextField!
     @IBOutlet weak var goldLabel: UILabel!
@@ -21,6 +21,9 @@ class MrBankizViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.depositText.delegate = self
+        self.withdrawText.delegate = self
+        self.loanText.delegate = self
         borrowValue = Int(20 * Double((player?.level.current)! + 1) * 0.5 + (Double((player?.level.current)! +  10) * 1.8))
         updateLabels()
         timer = RepeatingTimer(timeInterval: 10)
@@ -39,6 +42,11 @@ class MrBankizViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
     
     @IBAction func depositTapped(_ sender: Any) {
