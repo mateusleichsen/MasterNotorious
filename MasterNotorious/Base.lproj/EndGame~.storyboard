@@ -283,6 +283,7 @@
                                 <state key="normal" title="Open the Door"/>
                                 <connections>
                                     <action selector="doorTapped:" destination="52B-sL-cws" eventType="touchUpInside" id="5lj-IK-ycr"/>
+                                    <segue destination="QvJ-1D-pgc" kind="show" identifier="startSegue" id="H9V-VU-Ouv"/>
                                 </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ype-XJ-LHy">
@@ -305,11 +306,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HYG-eb-2oh"/>
                     </view>
-                    <connections>
-                        <outlet property="containerView" destination="Ype-XJ-LHy" id="7ed-Cb-771"/>
-                        <outlet property="doorButton" destination="vMi-Qh-DT8" id="gZR-K0-Ygc"/>
-                        <segue destination="QvJ-1D-pgc" kind="show" identifier="startSegue" id="Noz-Da-kc0"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KR2-tN-fD6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1091,7 +1087,7 @@
                         <outlet property="skill2Button" destination="Xs6-sh-HH2" id="SgI-bC-3rL"/>
                         <outlet property="skillStackView" destination="ufK-Bf-06d" id="uen-tt-yX5"/>
                         <segue destination="e4i-vo-JBH" kind="show" identifier="underSegue" id="mAk-pz-lPK"/>
-                        <segue destination="52B-sL-cws" kind="show" identifier="restartSegue" id="N9T-rr-wgy"/>
+                        <segue destination="52B-sL-cws" kind="show" identifier="segueRestart" id="N9T-rr-wgy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GJO-rh-Jk6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1756,8 +1752,149 @@
             </objects>
             <point key="canvasLocation" x="3316" y="-185"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="sm8-OX-H7i">
+            <objects>
+                <viewController id="A2M-d1-549" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="on0-Uc-nec">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="400"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You defeated your master. He lays in front of you, agonizing. You see him trying to say something, his last word." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCn-Tw-f80">
+                                <rect key="frame" x="0.0" y="0.0" width="343" height="119.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sword" translatesAutoresizingMaskIntoConstraints="NO" id="OFW-80-cZ8">
+                                <rect key="frame" x="32" y="252" width="279" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="OFW-80-cZ8" secondAttribute="bottom" constant="20" id="7AV-4V-tK7"/>
+                            <constraint firstAttribute="trailing" secondItem="RCn-Tw-f80" secondAttribute="trailing" id="OkX-uN-3rC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OFW-80-cZ8" secondAttribute="trailing" constant="16" id="TEh-La-zbf"/>
+                            <constraint firstItem="RCn-Tw-f80" firstAttribute="leading" secondItem="on0-Uc-nec" secondAttribute="leading" id="dJ4-8B-ALi"/>
+                            <constraint firstItem="RCn-Tw-f80" firstAttribute="top" secondItem="on0-Uc-nec" secondAttribute="top" id="vAq-bw-mZw"/>
+                            <constraint firstItem="OFW-80-cZ8" firstAttribute="leading" secondItem="on0-Uc-nec" secondAttribute="leadingMargin" constant="16" id="y4u-LW-8c2"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="343" height="400"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5os-KM-Ksr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1098" y="-336"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="UlL-xs-0ka">
+            <objects>
+                <viewController id="xDV-ff-xOG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hTz-GY-uvx">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="400"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="He said, it was not clear words but a spell. He casted a spell, you feel your soul getting draged and vanishing." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4L-pb-wJo">
+                                <rect key="frame" x="0.0" y="0.0" width="343" height="119.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magic" translatesAutoresizingMaskIntoConstraints="NO" id="0IJ-tD-9fZ">
+                                <rect key="frame" x="32" y="252" width="279" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="U4L-pb-wJo" secondAttribute="trailing" id="QXY-fi-H4O"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0IJ-tD-9fZ" secondAttribute="trailing" constant="16" id="XBb-IP-At7"/>
+                            <constraint firstItem="U4L-pb-wJo" firstAttribute="leading" secondItem="hTz-GY-uvx" secondAttribute="leading" id="biA-mZ-Hsh"/>
+                            <constraint firstItem="0IJ-tD-9fZ" firstAttribute="leading" secondItem="hTz-GY-uvx" secondAttribute="leadingMargin" constant="16" id="cFF-hW-vEa"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="0IJ-tD-9fZ" secondAttribute="bottom" constant="20" id="qxV-cp-1s8"/>
+                            <constraint firstItem="U4L-pb-wJo" firstAttribute="top" secondItem="hTz-GY-uvx" secondAttribute="top" id="u3n-UU-bRo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xq1-YE-Ldf"/>
+                    </view>
+                    <size key="freeformSize" width="343" height="400"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jqy-m5-RXN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-473" y="-336"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TXP-Po-CMP">
+            <objects>
+                <viewController id="fxH-PF-rGk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mg7-bX-vIe">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="400"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ToQ-rS-uJk">
+                                <rect key="frame" x="0.0" y="0.0" width="343" height="149.5"/>
+                                <string key="text">And now you only see darkness and a whisper. Another spell? But it is a sweet voice, not from your master. You see a light and someon calling you.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skull" translatesAutoresizingMaskIntoConstraints="NO" id="L0h-g9-GHc">
+                                <rect key="frame" x="32" y="252" width="279" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ToQ-rS-uJk" firstAttribute="leading" secondItem="mg7-bX-vIe" secondAttribute="leading" id="Dh6-XG-cH8"/>
+                            <constraint firstItem="ToQ-rS-uJk" firstAttribute="top" secondItem="mg7-bX-vIe" secondAttribute="top" id="FNb-Bz-Dgo"/>
+                            <constraint firstAttribute="trailing" secondItem="ToQ-rS-uJk" secondAttribute="trailing" id="NzQ-4i-FMc"/>
+                            <constraint firstItem="L0h-g9-GHc" firstAttribute="leading" secondItem="mg7-bX-vIe" secondAttribute="leadingMargin" constant="16" id="XkK-rU-Pur"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="L0h-g9-GHc" secondAttribute="trailing" constant="16" id="px7-Fk-8dn"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="L0h-g9-GHc" secondAttribute="bottom" constant="20" id="u70-1r-8a8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Dd7-wW-3o6"/>
+                    </view>
+                    <size key="freeformSize" width="343" height="400"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tIW-e4-wrd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1098" y="105"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eBS-xi-7uB">
+            <objects>
+                <viewController id="pyn-dt-0AD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1W2-T9-BJX">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="400"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*You must fullfil your destiny, Master Notorious shall be slayed by you*. You see a door and walk towards it." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="821-yZ-VU2">
+                                <rect key="frame" x="0.0" y="0.0" width="343" height="119.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="adventurer_map" translatesAutoresizingMaskIntoConstraints="NO" id="2Xh-EV-VBL">
+                                <rect key="frame" x="32" y="252" width="279" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="821-yZ-VU2" firstAttribute="top" secondItem="1W2-T9-BJX" secondAttribute="top" id="NVd-b1-vD2"/>
+                            <constraint firstItem="2Xh-EV-VBL" firstAttribute="leading" secondItem="1W2-T9-BJX" secondAttribute="leadingMargin" constant="16" id="O3v-Fc-3al"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2Xh-EV-VBL" secondAttribute="trailing" constant="16" id="OnB-1a-36I"/>
+                            <constraint firstItem="821-yZ-VU2" firstAttribute="leading" secondItem="1W2-T9-BJX" secondAttribute="leading" id="dyM-92-XA0"/>
+                            <constraint firstAttribute="trailing" secondItem="821-yZ-VU2" secondAttribute="trailing" id="egn-Xo-j7f"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="2Xh-EV-VBL" secondAttribute="bottom" constant="20" id="tDN-57-zNp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jab-Ir-Bgx"/>
+                    </view>
+                    <size key="freeformSize" width="343" height="400"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oaS-i8-gAC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-473" y="104"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="adventurer_map" width="128" height="128"/>
         <image name="armor" width="1200" height="900"/>
         <image name="bank" width="1920" height="1080"/>
         <image name="blacksmith" width="980" height="700"/>
@@ -1768,15 +1905,18 @@
         <image name="hunt" width="867" height="1000"/>
         <image name="hut" width="599" height="337"/>
         <image name="jewel" width="583" height="350"/>
+        <image name="magic" width="128" height="128"/>
         <image name="master" width="735" height="509"/>
+        <image name="skull" width="128" height="128"/>
+        <image name="sword" width="128" height="128"/>
         <image name="temple" width="564" height="526"/>
         <image name="thegatekeeper" width="660" height="534"/>
         <image name="village" width="900" height="900"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ueV-ge-ume"/>
-        <segue reference="Mh1-JC-ao6"/>
-        <segue reference="Noz-Da-kc0"/>
+        <segue reference="iLa-kd-wf3"/>
+        <segue reference="H9V-VU-Ouv"/>
         <segue reference="wWQ-ZA-K15"/>
         <segue reference="6xk-A6-o3c"/>
     </inferredMetricsTieBreakers>

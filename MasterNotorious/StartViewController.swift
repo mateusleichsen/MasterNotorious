@@ -32,7 +32,7 @@ class StartViewController: UIViewController  {
         
         setDataPickers()
         loadUserData()
-        if player != nil {
+        if player != nil && !isRestart {
             performSegue(withIdentifier: "crossroadSegue", sender: self)
         }
     }
@@ -128,8 +128,32 @@ class StartViewController: UIViewController  {
     
     fileprivate func loadUserData() {
         player = playerRepository.loadPlayer()
-        print("playerloaded")
-        print(player == nil ? "nil" : "nonil")
+        bank = bankRepository.loadBankData()
+        if bank == nil {
+            bank = Bank()
+            bankRepository.saveBankData(bank: bank!)
+        }
+        
+        player?.level.exp = 1000000
+        player?.level.levelUp()
+        player?.level.levelUp()
+        player?.level.levelUp()
+        player?.level.levelUp()
+        player?.level.levelUp()
+        player?.level.levelUp()
+        player?.level.levelUp()
+        player?.level.levelUp()
+        player?.level.levelUp()
+        player?.level.levelUp()
+        player?.level.levelUp()
+        player?.level.levelUp()
+        player?.level.levelUp()
+        player?.level.levelUp()
+        player?.weapon = Weapon(type: .light_saber, price: 199)
+        player?.armor = Armor(type: .green_tunic, price: 199)
+        player?.maxHealth = 1000
+        player?.health = 1000
+        player?.attack = 400
     }
 }
 

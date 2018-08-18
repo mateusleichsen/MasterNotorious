@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Slip {
+struct Slip {
     var advice:String
     var slip_id:Int
     

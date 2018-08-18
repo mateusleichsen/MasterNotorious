@@ -16,7 +16,6 @@ class MasterNotoriousViewController: UIViewController {
         super.viewDidLoad()
         challengeButton.layer.cornerRadius = 5
         challengeButton.contentEdgeInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
-        setChallengeButton()
         // Do any additional setup after loading the view.
     }
 

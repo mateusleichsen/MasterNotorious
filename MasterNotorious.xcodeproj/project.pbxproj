@@ -16,6 +16,12 @@
 		902579D32123840800EB3240 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902579D22123840800EB3240 /* StartViewController.swift */; };
 		902579F72124FDD900EB3240 /* MasterNotoriousModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 902579F52124FDD800EB3240 /* MasterNotoriousModel.xcdatamodeld */; };
 		90257A1C21262C7D00EB3240 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90257A1B21262C7D00EB3240 /* Repository.swift */; };
+		90257A4F2127950700EB3240 /* SubViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90257A4E2127950700EB3240 /* SubViewManager.swift */; };
+		90257A552127A64000EB3240 /* EndGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90257A532127A64000EB3240 /* EndGame.storyboard */; };
+		90257A582127A6CA00EB3240 /* Scene1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90257A572127A6CA00EB3240 /* Scene1ViewController.swift */; };
+		90257A5A2127A6E500EB3240 /* Scene2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90257A592127A6E500EB3240 /* Scene2ViewController.swift */; };
+		90257A5C2127A6EF00EB3240 /* Scene3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90257A5B2127A6EF00EB3240 /* Scene3ViewController.swift */; };
+		90257A5E2127A6F900EB3240 /* Scene4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90257A5D2127A6F900EB3240 /* Scene4ViewController.swift */; };
 		90308035211F70D8001A351A /* MrBankizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90308034211F70D8001A351A /* MrBankizViewController.swift */; };
 		90308037211F726D001A351A /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90308036211F726D001A351A /* Bank.swift */; };
 		903080392120FBE5001A351A /* MasterNotoriousViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903080382120FBE5001A351A /* MasterNotoriousViewController.swift */; };
@@ -51,6 +57,12 @@
 		902579D22123840800EB3240 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		902579F62124FDD800EB3240 /* NavigatorModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NavigatorModel.xcdatamodel; sourceTree = "<group>"; };
 		90257A1B21262C7D00EB3240 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		90257A4E2127950700EB3240 /* SubViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewManager.swift; sourceTree = "<group>"; };
+		90257A542127A64000EB3240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MasterNotorious/Base.lproj/EndGame.storyboard; sourceTree = "<group>"; };
+		90257A572127A6CA00EB3240 /* Scene1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene1ViewController.swift; sourceTree = "<group>"; };
+		90257A592127A6E500EB3240 /* Scene2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene2ViewController.swift; sourceTree = "<group>"; };
+		90257A5B2127A6EF00EB3240 /* Scene3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene3ViewController.swift; sourceTree = "<group>"; };
+		90257A5D2127A6F900EB3240 /* Scene4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene4ViewController.swift; sourceTree = "<group>"; };
 		90308034211F70D8001A351A /* MrBankizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrBankizViewController.swift; sourceTree = "<group>"; };
 		90308036211F726D001A351A /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
 		903080382120FBE5001A351A /* MasterNotoriousViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterNotoriousViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +101,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		90257A562127A6A800EB3240 /* EndGameViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				90257A572127A6CA00EB3240 /* Scene1ViewController.swift */,
+				90257A592127A6E500EB3240 /* Scene2ViewController.swift */,
+				90257A5B2127A6EF00EB3240 /* Scene3ViewController.swift */,
+				90257A5D2127A6F900EB3240 /* Scene4ViewController.swift */,
+			);
+			path = EndGameViewControllers;
+			sourceTree = "<group>";
+		};
 		905E824E2115F0B800846DC5 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +135,7 @@
 				902579F52124FDD800EB3240 /* MasterNotoriousModel.xcdatamodeld */,
 				902579D22123840800EB3240 /* StartViewController.swift */,
 				905E825E2115F0B800846DC5 /* Main.storyboard */,
+				90257A532127A64000EB3240 /* EndGame.storyboard */,
 				905E825C2115F0B800846DC5 /* CrossroadViewController.swift */,
 				909DB30521224B630033CCF7 /* UnderworldViewController.swift */,
 				905E827621189FBD00846DC5 /* ForestViewController.swift */,
@@ -128,6 +152,7 @@
 				9018BC32211E6EDA00F4A043 /* MissJewelryViewController.swift */,
 				905E828C211D1A2F00846DC5 /* HouseViewController.swift */,
 				902579CE21237C5500EB3240 /* RestartViewController.swift */,
+				90257A562127A6A800EB3240 /* EndGameViewControllers */,
 				905E82612115F0BA00846DC5 /* Assets.xcassets */,
 				905E82632115F0BA00846DC5 /* LaunchScreen.storyboard */,
 				905E82662115F0BA00846DC5 /* Info.plist */,
@@ -141,6 +166,7 @@
 				905E8282211BBA9000846DC5 /* Helpers.swift */,
 				90257A1B21262C7D00EB3240 /* Repository.swift */,
 				905E828A211CFDCA00846DC5 /* Slip.swift */,
+				90257A4E2127950700EB3240 /* SubViewManager.swift */,
 			);
 			path = MasterNotorious;
 			sourceTree = "<group>";
@@ -205,6 +231,7 @@
 			files = (
 				905E82652115F0BA00846DC5 /* LaunchScreen.storyboard in Resources */,
 				905E82622115F0BA00846DC5 /* Assets.xcassets in Resources */,
+				90257A552127A64000EB3240 /* EndGame.storyboard in Resources */,
 				905E82602115F0B800846DC5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,10 +243,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90257A5E2127A6F900EB3240 /* Scene4ViewController.swift in Sources */,
 				9018BC2B211E1C9E00F4A043 /* Items.swift in Sources */,
 				905E8273211891C400846DC5 /* Monster.swift in Sources */,
 				905E825D2115F0B800846DC5 /* CrossroadViewController.swift in Sources */,
 				905E82712117A1C300846DC5 /* Player.swift in Sources */,
+				90257A5C2127A6EF00EB3240 /* Scene3ViewController.swift in Sources */,
 				909DB30621224B630033CCF7 /* UnderworldViewController.swift in Sources */,
 				902579D32123840800EB3240 /* StartViewController.swift in Sources */,
 				905E8289211CF29300846DC5 /* VillageViewController.swift in Sources */,
@@ -232,9 +261,11 @@
 				9018BC2D211E258500F4A043 /* SteeleSmithViewController.swift in Sources */,
 				905E828D211D1A2F00846DC5 /* HouseViewController.swift in Sources */,
 				9018BC33211E6EDA00F4A043 /* MissJewelryViewController.swift in Sources */,
+				90257A582127A6CA00EB3240 /* Scene1ViewController.swift in Sources */,
 				902579F72124FDD900EB3240 /* MasterNotoriousModel.xcdatamodeld in Sources */,
 				905E827F211A7E3200846DC5 /* RagHealHutViewController.swift in Sources */,
 				9018BC2F211E520000F4A043 /* ItemShopViewController.swift in Sources */,
+				90257A5A2127A6E500EB3240 /* Scene2ViewController.swift in Sources */,
 				905E8281211BAEFB00846DC5 /* Dice.swift in Sources */,
 				905E8283211BBA9000846DC5 /* Helpers.swift in Sources */,
 				902579CF21237C5500EB3240 /* RestartViewController.swift in Sources */,
@@ -245,12 +276,21 @@
 				905E825B2115F0B800846DC5 /* AppDelegate.swift in Sources */,
 				905E828B211CFDCA00846DC5 /* Slip.swift in Sources */,
 				905E82792118F38E00846DC5 /* Combat.swift in Sources */,
+				90257A4F2127950700EB3240 /* SubViewManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		90257A532127A64000EB3240 /* EndGame.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90257A542127A64000EB3240 /* Base */,
+			);
+			name = EndGame.storyboard;
+			sourceTree = "<group>";
+		};
 		905E825E2115F0B800846DC5 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

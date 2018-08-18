@@ -98,6 +98,7 @@ class CombatViewController: UIViewController {
         }
         
         if let masterNotoriousVC = segue.destination as? MasterNotoriousViewController {
+            print("level up")
             masterNotoriousVC.isLevelUp = true
         }
     }
@@ -137,9 +138,11 @@ class CombatViewController: UIViewController {
             if self.monsterDead {
                 if (player?.level.current)! < 15 {
                     player?.level.levelUp()
+                    player?.calculateLevel()
                 } else {
                     playerRepository.updatePlayer(player:player!)
                     performSegue(withIdentifier: "restartSegue", sender: self)
+                    return
                 }
             } else {
                 player?.decreaseStamina()
