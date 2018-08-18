@@ -14,6 +14,7 @@ class HouseViewController: UIViewController {
     var sleepThread:DispatchWorkItem?
     @IBOutlet weak var sleepProgress: UIProgressView!
     @IBOutlet weak var sleepButton: UIButton!
+    @IBOutlet weak var sleepLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +40,7 @@ class HouseViewController: UIViewController {
     
     @IBAction func sleepTapped(_ sender: Any) {
         let hoursSleep = Int(((player?.maxStamina)! - (player?.stamina)!) / 10)
+        self.sleepLabel.text = SleepText.Texts.random()
         sleepThread = DispatchWorkItem {
             for index in 1...hoursSleep {
                 if (self.sleepThread?.isCancelled)! {
@@ -54,10 +56,11 @@ class HouseViewController: UIViewController {
                         player?.fullRecover()
                         self.sleepButton.setTitle("Sleep", for: .normal)
                         self.isSleeping = false
+                        self.sleepLabel.text = "You see a confortable bed!"
                     }
+                    self.sleepLabel.text = SleepText.Texts.random()
                     self.playerContainerVC.updateStatus()
                     playerRepository.updatePlayer(player: player!)
-                    bankRepository.updateBankData(bank: bank!)
                 }
             }
         }
@@ -79,4 +82,17 @@ class HouseViewController: UIViewController {
         
         DispatchQueue.global(qos: .background).async(execute: sleepThread!)
     }
+}
+
+struct SleepText {
+    private init() {}
+    
+    static let Texts = [
+        "Close your eyes, you are sleeping",
+        "There is a beetle flying over your head, better wake up",
+        "While you sleep, you breath",
+        "Don't sleep too much, or you will not have time enough to sleep today",
+        "Zzzzz... Zzzzz...",
+        "That was a mosquito sleeping on your face"
+    ]
 }

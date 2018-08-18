@@ -752,17 +752,25 @@
                                 </connections>
                             </containerView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zEs-m0-Avr">
-                                <rect key="frame" x="32" y="288" width="311" height="2"/>
+                                <rect key="frame" x="32" y="332.5" width="311" height="2"/>
                             </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You see a confortable bed!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Gi-Me-jhc">
+                                <rect key="frame" x="16" y="303.5" width="343" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="lck-jX-jFC" firstAttribute="leading" secondItem="dxt-n1-sIk" secondAttribute="leading" constant="16" id="0gJ-Vt-x9G"/>
+                            <constraint firstItem="dxt-n1-sIk" firstAttribute="trailing" secondItem="7Gi-Me-jhc" secondAttribute="trailing" constant="16" id="4gU-XF-3ky"/>
                             <constraint firstItem="qrB-nQ-2we" firstAttribute="leading" secondItem="dxt-n1-sIk" secondAttribute="leading" constant="16" id="5Bf-eu-6xl"/>
                             <constraint firstAttribute="trailing" secondItem="qrB-nQ-2we" secondAttribute="trailing" constant="16" id="FQw-ga-e0V"/>
-                            <constraint firstItem="dxt-n1-sIk" firstAttribute="top" secondItem="zEs-m0-Avr" secondAttribute="bottom" constant="-270" id="HOr-XS-FI1"/>
+                            <constraint firstItem="zEs-m0-Avr" firstAttribute="centerY" secondItem="PRp-px-9Zi" secondAttribute="centerY" id="I4X-A1-zyM"/>
                             <constraint firstItem="zEs-m0-Avr" firstAttribute="leading" secondItem="PRp-px-9Zi" secondAttribute="leadingMargin" constant="16" id="IK5-sc-IiK"/>
                             <constraint firstItem="3wg-cr-8Jc" firstAttribute="top" secondItem="dxt-n1-sIk" secondAttribute="top" id="SjF-o7-sCm"/>
+                            <constraint firstItem="7Gi-Me-jhc" firstAttribute="leading" secondItem="dxt-n1-sIk" secondAttribute="leading" constant="16" id="TYm-lO-40g"/>
                             <constraint firstItem="dxt-n1-sIk" firstAttribute="trailing" secondItem="3wg-cr-8Jc" secondAttribute="trailing" id="UgU-m1-qn7"/>
                             <constraint firstItem="zEs-m0-Avr" firstAttribute="centerX" secondItem="PRp-px-9Zi" secondAttribute="centerX" id="XcS-c4-ffg"/>
                             <constraint firstItem="3wg-cr-8Jc" firstAttribute="leading" secondItem="dxt-n1-sIk" secondAttribute="leading" id="Xf0-KL-wFA"/>
@@ -770,6 +778,7 @@
                             <constraint firstItem="3wg-cr-8Jc" firstAttribute="trailing" secondItem="dxt-n1-sIk" secondAttribute="trailing" id="Zaj-TN-1cy"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zEs-m0-Avr" secondAttribute="trailing" constant="16" id="fa9-fz-gb7"/>
                             <constraint firstItem="lck-jX-jFC" firstAttribute="top" secondItem="3wg-cr-8Jc" secondAttribute="bottom" constant="8" id="h5M-bM-Rbx"/>
+                            <constraint firstItem="zEs-m0-Avr" firstAttribute="top" secondItem="7Gi-Me-jhc" secondAttribute="bottom" constant="8" id="hrS-oy-EhL"/>
                             <constraint firstItem="3wg-cr-8Jc" firstAttribute="leading" secondItem="PRp-px-9Zi" secondAttribute="leading" id="jYA-22-R8S"/>
                             <constraint firstItem="dxt-n1-sIk" firstAttribute="trailing" secondItem="lck-jX-jFC" secondAttribute="trailing" constant="16" id="rNy-mG-uGJ"/>
                             <constraint firstItem="dxt-n1-sIk" firstAttribute="bottom" secondItem="qrB-nQ-2we" secondAttribute="bottom" constant="20" id="uDp-MB-B93"/>
@@ -778,6 +787,7 @@
                     </view>
                     <connections>
                         <outlet property="sleepButton" destination="Zlg-l5-gn0" id="z6Z-tr-tHQ"/>
+                        <outlet property="sleepLabel" destination="7Gi-Me-jhc" id="5QG-KF-S6Z"/>
                         <outlet property="sleepProgress" destination="zEs-m0-Avr" id="5YO-L8-pdk"/>
                     </connections>
                 </viewController>
@@ -1793,7 +1803,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ueV-ge-ume"/>
-        <segue reference="Mh1-JC-ao6"/>
+        <segue reference="YLP-Fm-222"/>
         <segue reference="Noz-Da-kc0"/>
         <segue reference="8pw-bp-4v5"/>
         <segue reference="Ood-12-xa7"/>

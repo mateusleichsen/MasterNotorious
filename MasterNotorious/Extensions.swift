@@ -30,6 +30,15 @@ extension Array where Element == (Date,Decimal) {
     }
 }
 
+extension Array {
+    func random() -> Element {
+        let lastIndex = UInt32(self.count - 1)
+        let randomIndex = arc4random_uniform(lastIndex)
+        
+        return self[Int(randomIndex)]
+    }
+}
+
 extension Decimal {
     func rounded(toPlaces places:Int) -> Decimal {
         let divisor = pow(10.0, Double(places))
