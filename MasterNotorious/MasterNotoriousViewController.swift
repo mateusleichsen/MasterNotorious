@@ -81,7 +81,6 @@ class MasterNotoriousViewController: UIViewController {
 extension MasterNotoriousViewController: MasterNotoriousDelegate {
     func setLevelUp() {
         self.isLevelUp = true
-        print("someone called")
     }
     
     

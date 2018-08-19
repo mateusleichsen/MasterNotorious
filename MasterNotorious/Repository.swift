@@ -110,6 +110,18 @@ class Repository {
             print("Failed saving")
         }
     }
+    
+    func deleteAllRecords(_ entity:String) {
+        let deleteFetch = NSFetchRequest<NSFetchRequestResult>(entityName: entity)
+        let deleteRequest = NSBatchDeleteRequest(fetchRequest: deleteFetch)
+        
+        do {
+            try context.execute(deleteRequest)
+            try context.save()
+        } catch {
+            print ("There was an error")
+        }
+    }
 }
 
 class PlayerRepository:Repository {
@@ -158,6 +170,13 @@ class PlayerRepository:Repository {
             skillRepository.updateSkill(skill: player.skill)
         }
         
+    }
+    
+    func deletePlayer() {
+        super.deleteAllRecords(EntityNames.playerEntity)
+        super.deleteAllRecords(EntityNames.skillEntity)
+        super.deleteAllRecords(EntityNames.jewelryEntity)
+        super.deleteAllRecords(EntityNames.bonusEntity)
     }
     
     func convertTo(player:Player) -> [String:Any] {
@@ -309,6 +328,10 @@ class BankRepository:Repository {
                 super.updateObj(managedObject: bankDataObj, obj: obj)
             }
         }
+    }
+    
+    func deleteBank() {
+        super.deleteAllRecords(EntityNames.bankEntity)
     }
     
     func convertTo(bankData: (Date,Decimal), type: eBankData) -> [String:Any] {

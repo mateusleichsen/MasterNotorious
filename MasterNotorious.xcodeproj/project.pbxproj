@@ -22,6 +22,7 @@
 		90257A5A2127A6E500EB3240 /* Scene2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90257A592127A6E500EB3240 /* Scene2ViewController.swift */; };
 		90257A5C2127A6EF00EB3240 /* Scene3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90257A5B2127A6EF00EB3240 /* Scene3ViewController.swift */; };
 		90257A5E2127A6F900EB3240 /* Scene4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90257A5D2127A6F900EB3240 /* Scene4ViewController.swift */; };
+		90257A602128ECB600EB3240 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90257A5F2128ECB600EB3240 /* MenuViewController.swift */; };
 		90308035211F70D8001A351A /* MrBankizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90308034211F70D8001A351A /* MrBankizViewController.swift */; };
 		90308037211F726D001A351A /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90308036211F726D001A351A /* Bank.swift */; };
 		903080392120FBE5001A351A /* MasterNotoriousViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903080382120FBE5001A351A /* MasterNotoriousViewController.swift */; };
@@ -63,6 +64,7 @@
 		90257A592127A6E500EB3240 /* Scene2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene2ViewController.swift; sourceTree = "<group>"; };
 		90257A5B2127A6EF00EB3240 /* Scene3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene3ViewController.swift; sourceTree = "<group>"; };
 		90257A5D2127A6F900EB3240 /* Scene4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene4ViewController.swift; sourceTree = "<group>"; };
+		90257A5F2128ECB600EB3240 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		90308034211F70D8001A351A /* MrBankizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrBankizViewController.swift; sourceTree = "<group>"; };
 		90308036211F726D001A351A /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
 		903080382120FBE5001A351A /* MasterNotoriousViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterNotoriousViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				905E825E2115F0B800846DC5 /* Main.storyboard */,
 				90257A532127A64000EB3240 /* EndGame.storyboard */,
 				905E825C2115F0B800846DC5 /* CrossroadViewController.swift */,
+				90257A5F2128ECB600EB3240 /* MenuViewController.swift */,
 				909DB30521224B630033CCF7 /* UnderworldViewController.swift */,
 				905E827621189FBD00846DC5 /* ForestViewController.swift */,
 				905E827421189F2000846DC5 /* CombatViewController.swift */,
@@ -274,6 +277,7 @@
 				903080392120FBE5001A351A /* MasterNotoriousViewController.swift in Sources */,
 				905E8285211BC05600846DC5 /* PlayerContainerViewController.swift in Sources */,
 				905E825B2115F0B800846DC5 /* AppDelegate.swift in Sources */,
+				90257A602128ECB600EB3240 /* MenuViewController.swift in Sources */,
 				905E828B211CFDCA00846DC5 /* Slip.swift in Sources */,
 				905E82792118F38E00846DC5 /* Combat.swift in Sources */,
 				90257A4F2127950700EB3240 /* SubViewManager.swift in Sources */,

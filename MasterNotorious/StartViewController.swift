@@ -15,7 +15,6 @@ var bankRepository:BankRepository!
 
 class StartViewController: UIViewController, UITextFieldDelegate  {
     var isRestart:Bool = false
-    var firstChar:Bool = player == nil
     var raceProfessionPicker:RaceProfessionPicker!
     var bonusPicker:BonusPicker!
     @IBOutlet weak var nameText: UITextField!
@@ -44,7 +43,7 @@ class StartViewController: UIViewController, UITextFieldDelegate  {
             nameStackView.show()
         }
         
-        if firstChar {
+        if player == nil {
             bonusStackView.hide()
         } else {
             bonusStackView.show()
@@ -68,9 +67,8 @@ class StartViewController: UIViewController, UITextFieldDelegate  {
         let profession = eProfession(rawValue: professionRawValue)
         let bonus = bonusPicker.data[bonusPickerView.selectedRow(inComponent: 0)]
         
-        if firstChar {
+        if player == nil {
             player = Player(name: nameText.text!, race: race!, profession: profession!)
-            firstChar = false
             playerRepository.savePlayer(player: player!)
             print("playersaved")
         }
