@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17G65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="BankModel" representedClassName="BankModel" syncable="YES" codeGenerationType="class">
+    <entity name="BankEntity" representedClassName="BankEntity" syncable="YES" codeGenerationType="class">
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="value" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
     </entity>
-    <entity name="BonusModel" representedClassName="BonusModel" syncable="YES" codeGenerationType="class">
+    <entity name="BonusEntity" representedClassName="BonusEntity" syncable="YES" codeGenerationType="class">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="value" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
-    <entity name="JewelryModel" representedClassName="JewelryModel" syncable="YES" codeGenerationType="class">
+    <entity name="JewelryEntity" representedClassName="JewelryEntity" syncable="YES" codeGenerationType="class">
         <attribute name="bonus" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="bonusValue" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="price" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
-    <entity name="PlayerModel" representedClassName="PlayerModel" syncable="YES" codeGenerationType="class">
+    <entity name="PlayerEntity" representedClassName="PlayerEntity" syncable="YES" codeGenerationType="class">
         <attribute name="armorName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="attack" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="defense" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
@@ -34,14 +34,14 @@
         <attribute name="stamina" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="weaponName" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="SkillModel" representedClassName="SkillModel" syncable="YES" codeGenerationType="class">
+    <entity name="SkillEntity" representedClassName="SkillEntity" syncable="YES" codeGenerationType="class">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="PlayerModel" positionX="-315" positionY="-18" width="128" height="298"/>
-        <element name="SkillModel" positionX="-162" positionY="-18" width="128" height="58"/>
-        <element name="BonusModel" positionX="-162" positionY="189" width="128" height="75"/>
-        <element name="BankModel" positionX="-162" positionY="81" width="128" height="90"/>
-        <element name="JewelryModel" positionX="-470" positionY="-18" width="128" height="103"/>
+        <element name="BankEntity" positionX="-162" positionY="81" width="128" height="90"/>
+        <element name="BonusEntity" positionX="-162" positionY="189" width="128" height="75"/>
+        <element name="JewelryEntity" positionX="-470" positionY="-18" width="128" height="105"/>
+        <element name="PlayerEntity" positionX="-315" positionY="-18" width="128" height="300"/>
+        <element name="SkillEntity" positionX="-162" positionY="-18" width="128" height="60"/>
     </elements>
 </model>

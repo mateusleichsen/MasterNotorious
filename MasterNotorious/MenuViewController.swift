@@ -2,8 +2,8 @@
 //  MenuViewController.swift
 //  MasterNotorious
 //
-//  Created by Tiago Leichsenring on 19.08.18.
-//  Copyright © 2018 Tiago Leichsenring. All rights reserved.
+//  Created by Mateus Leichsenring on 19.08.18.
+//  Copyright © 2018 Mateus Leichsenring. All rights reserved.
 //
 
 import UIKit

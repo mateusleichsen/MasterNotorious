@@ -11,11 +11,11 @@ import CoreData
 import UIKit
 
 struct EntityNames {
-    static let playerEntity:String = "PlayerModel"
-    static let skillEntity:String = "SkillModel"
-    static let bonusEntity:String = "BonusModel"
-    static let jewelryEntity:String = "JewelryModel"
-    static let bankEntity:String = "BankModel"
+    static let playerEntity:String = "PlayerEntity"
+    static let skillEntity:String = "SkillEntity"
+    static let bonusEntity:String = "BonusEntity"
+    static let jewelryEntity:String = "JewelryEntity"
+    static let bankEntity:String = "BankEntity"
 }
 
 class Repository {
